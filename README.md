@@ -4,3 +4,4 @@ Professora: Patrícia Vilain
 ### Conteúdo:
 * Aula 1: Introdução, exemplo dos triângulos
 * Aula 2: Unit Tests
+* Aula 3: Unit Tests - Fixtures de Teste

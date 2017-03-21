@@ -1,0 +1,66 @@
+Unit Tests - Fixtures de Testes - 21/03/2017
+  (Meszaros)
+
+Configuração das fixtures
+
+Tipos:
+Fresh fixtures
+  libera o dado após o teste
+  fixtures não são reusadas, ou seja, a cada novo teste a fixture será reconfigurada.
+
+  - Transiente:
+    estão na memória e são referenciadas por variàveis locais
+
+    - In line Setup:
+      a configuração é feita junto ao código do teste
+      desvantagem: duplicação de código
+
+    - Delegated Setup:
+      delega para outro método a parte comum da configuração do teste. Método utilitário com nome significativo
+      reduz a duplicação de código
+      elimina a nescecidade de mostrar detalhes, para cada teste, de como as fixtures são criadas
+
+    - Implicit Setup
+      código que precisa ser executado antes de cada teste ("@before")
+      desvantagem: é preciso consultar o setup para saber o que está sendo feito como configuração antes do Teste.
+                   mais difícil de compreender o teste
+
+  - Persistentes:
+    armazenadas em base de dados, variáveis de classe
+
+
+  -Teardown de Fixtures
+    mais usado para o caso de não existir coletor de lixo
+    depende do setup que é feito
+
+    - usa as mesmas estratégias das fixtures transientes ( In line, Delegated, Implicit)
+
+
+Verificação de Resultados
+  teste automatizados devem ser selfchecking
+  para isso são usadas asserções para verificar os resultados
+
+  - Verificação de Estado:
+    manda executar e verifica o estado após a execução
+
+  - Verificação de Comportamento:
+    verifica a interação com outros métodos, classes, sistemas ...
+
+
+Organização dos Testes
+  verificar apenas uma condição em cada teste
+    quando um teste falha sabe-se exatamente a condição que falhou
+    melhor para fazer manutenção
+
+  dividir em classes
+    - por features ("casos de uso")
+      ex.: verifica apenas pagamento/pedido/cadastro
+
+    - por fixtures
+      todos os testes possuem a mesma configuração (fixture)
+      o código de configuração pode ser colocado no método setup
+
+  ...
+
+Shared fixtures
+  compartilha as fixtures
