@@ -1,0 +1,55 @@
+Aula 4 - Hamcrest - 28/03/2017
+
+Objetivos da atividade de Teste
+  - verificação do funcionamento do programa
+  - meio de documentação/especificação
+  - auxilia na compreenção do sistema / de uma API
+  - prevenir que possíveis defeitos seja inseridos no Teste
+
+O esforço gasto com a implementação/manutenção de um teste deve ser menor que o ganho oferecido pelo teste
+
+Metas para Testes automatizados
+  Características de execução:
+    - completamente automatizados -> poder executar os testes de forma simples, com um único comando por exemplo
+                                  -> deve ser capaz de inicializar toda a infra estrutura necessária para executar o Teste (banco, servidor, ...)
+    - auto verificáveis -> o prórpio teste deve ser capaz de indicar se o teste foi bem sucedido ou se falhou
+    - repetitíveis -> um teste deve ser independente dos demais
+
+  - simples -> testar apenas uma regra de negócio por vez
+  - expressivos -> deve ser claro o que o teste esta verificando
+  - com separação de conceitos -> deve se criar testes separados para os diferentes aspectos do sistema
+  - robustos -> uma modificação pequena do sistema não deve afetar muitos testes, do contrário pode ser que os testes não sejam robustos
+
+Fases do Teste
+  - configuração (setup)
+  - Exercício (exercise)
+  - Verificação (verify)
+  - Finalização (tear down)
+
+Configuração e Verificação
+  - podem apresentar duplicação de código
+  - Verificação : oracles
+
+Oracles
+  - responsável por realizar a verificação
+  - pode ser humano ou mecânico (manual ou automatizado)
+  - decide se o sistema se comportou de forma correta ou não
+  - assertion methods
+  - providos pelo framework ou pelo responsavel pelo responsável pela implementação do teste
+  - responsável por informar ao framework o resultado do teste
+  - forma de documentar como o SUT deve se comportar
+
+Faltas, erros e falhas
+  - relação de causa e efeito
+  - falta (fault): inconsistência no código
+  - erro (error): diferença entre o resultado esperado e o obtido. Gerado pela falta
+  - falha (failure): mau funcionamento no sistema, podendo ser originado a partir de um defeito ou não. Geralmente resultado de um erro
+
+JUnit
+  - não adota a nomenclatura acima
+  - falha (failure) -> ocorre quando o resultado esperado difere do obtido pelo SUT
+  - erro (error) -> ocorre quando uma exceção não esperada é lançada
+
+  - assertEquals(esperado, atual, menssagem);
+
+  
