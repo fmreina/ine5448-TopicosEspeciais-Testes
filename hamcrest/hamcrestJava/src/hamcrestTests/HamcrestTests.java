@@ -18,6 +18,7 @@ import org.junit.Test;
 
 public class HamcrestTests {
 
+	// basic hamcrest matchers
 	@Test
 	public void objectMatcher(){
 		// string
@@ -57,5 +58,8 @@ public class HamcrestTests {
 		String frase = "teste do anyOf";
 		assertThat(frase, anyOf(equalToIgnoringCase("blah blah"), containsString("anyOf")));
 	}
+	
+	// Custom hamcrest matchers
+	// ...
 }
 
