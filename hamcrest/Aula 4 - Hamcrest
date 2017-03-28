@@ -51,5 +51,17 @@ JUnit
   - erro (error) -> ocorre quando uma exceção não esperada é lançada
 
   - assertEquals(esperado, atual, menssagem);
+  - fail -> mensagem de falha
 
-  
+Hamcrest
+  - é mais simples de ler
+  - matchers
+  - possibilita uma documentação mais expressiva
+
+  - assertThat(atual, matcher); -> matcher = equalsTo(esperado)
+  - hamcrest e asserts
+    - collection
+    - number
+    - text
+    - ...
+    
