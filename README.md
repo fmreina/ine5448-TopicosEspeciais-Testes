@@ -7,12 +7,12 @@ Professora: Patrícia Vilain
 * [notas-de-aula](https://github.com/fmreina/ine5448-TopicosEspeciais-Testes/tree/master/notas-de-aula/): contém anotações de aula
 
 ### Conteúdo:
-* [Aula 1](https://github.com/fmreina/ine5448-TopicosEspeciais-Testes/blob/master/notas-de-aula/Aula1-Apresentacao-Introducao): Introdução, exemplo dos triângulos
-* [Aula 2](https://github.com/fmreina/ine5448-TopicosEspeciais-Testes/blob/master/notas-de-aula/Aula2-TestesdeUnidade): Unit Tests
+* [Aula 1](https://github.com/fmreina/ine5448-TopicosEspeciais-Testes/blob/master/notas-de-aula/Aula-1-Apresentacao-Introducao): Introdução, exemplo dos triângulos
+* [Aula 2](https://github.com/fmreina/ine5448-TopicosEspeciais-Testes/blob/master/notas-de-aula/Aula-2-Testes-de-Unidade): Unit Tests
 	- Exercícios de sala em [codigo/JodaTests](https://github.com/fmreina/ine5448-TopicosEspeciais-Testes/tree/master/codigo/JodaTests)
-* [Aula 3](https://github.com/fmreina/ine5448-TopicosEspeciais-Testes/blob/master/notas-de-aula/Aula3-TestesdeUnidade-Fixtures): Unit Tests - Fixtures de Teste
+* [Aula 3](https://github.com/fmreina/ine5448-TopicosEspeciais-Testes/blob/master/notas-de-aula/Aula-3-Testes-de-Unidade-Fixtures): Unit Tests - Fixtures de Teste
 	- Exercícios de sala em [codigo/SistemaBancario.JUnitTests](https://github.com/fmreina/ine5448-TopicosEspeciais-Testes/tree/master/codigo/SistemaBancario.JUnitTests)
-* [Aula 4](https://github.com/fmreina/ine5448-TopicosEspeciais-Testes/blob/master/notas-de-aula/Aula4-Hamcrest): Hamcrest
+* [Aula 4](https://github.com/fmreina/ine5448-TopicosEspeciais-Testes/blob/master/notas-de-aula/Aula-4-Hamcrest): Hamcrest
 	- Exercícios de sala em [codigo/SistemaBancario.HamcrestTests](https://github.com/fmreina/ine5448-TopicosEspeciais-Testes/tree/master/codigo/SistemaBancario.HamcrestTests)
 
 * [Aula 5](https://github.com/fmreina/ine5448-TopicosEspeciais-Testes/tree/master/notas-de-aula/):
