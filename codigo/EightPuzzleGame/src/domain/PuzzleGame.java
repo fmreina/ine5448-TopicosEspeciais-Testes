@@ -188,7 +188,13 @@ public class PuzzleGame implements Puzzle{
 		return this.board.toString();	
 	}
 	
+	//TODO: delete
 	public Position readEmptyCellPosition(){
 		return emptyCell;
+	}
+	
+	//TODO: delete
+	public SquareBoard getBoard(){
+		return board;
 	}
 }

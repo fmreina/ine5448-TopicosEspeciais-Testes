@@ -1,4 +1,4 @@
-package tests;
+package domain;
 
 import static org.junit.Assert.*;
 
@@ -8,16 +8,19 @@ import java.util.Map;
 
 import org.junit.Test;
 
+import tests.ShufflePuzzleLevelTest;
+
 import domain.Position;
 import domain.SquareBoard;
 import domain.Tile;
 import domain.Puzzle.Direction;
 import domain.PuzzleGame;
 
-public class tests {
+public class tests1 {
 
 	@Test
 	public void putTilesInTheBoardTest(){
+		//FIXME:
 //		int dimension = 3;
 //		SquareBoard board = new SquareBoard(dimension);
 //		List<Tile> listOfTiles = this.generateListOfTiles (dimension*dimension-1);
