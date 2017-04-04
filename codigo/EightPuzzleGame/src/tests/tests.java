@@ -1,45 +1,77 @@
 package tests;
 
-import java.io.BufferedReader;
-import java.io.InputStreamReader;
+import static org.junit.Assert.*;
+
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
 
 import org.junit.Test;
 
-import domain.Puzzle;
-import domain.PuzzleGame;
-import domain.ShufflePuzzleLevelEasy;
-import domain.ShufflePuzzleLevelHard;
-import domain.ShufflePuzzleLevelMedium;
+import domain.Position;
+import domain.SquareBoard;
+import domain.Tile;
 import domain.Puzzle.Direction;
+import domain.PuzzleGame;
 
 public class tests {
 
-	
 	@Test
-	public void putTilesTest(){
-		int dimension = 3;
-		ShufflePuzzleLevelTest shuffler = new ShufflePuzzleLevelTest();
+	public void putTilesInTheBoardTest(){
+//		int dimension = 3;
+//		SquareBoard board = new SquareBoard(dimension);
+//		List<Tile> listOfTiles = this.generateListOfTiles (dimension*dimension-1);
+//		board.putTilesInTheBoard (board, listOfTiles);
 		
-		PuzzleGame game = new PuzzleGame(dimension, shuffler);
+//		int dimension = 3;
+//		ShufflePuzzleLevelTest shuffler = new ShufflePuzzleLevelTest();
+//		
+//		PuzzleGame game = new PuzzleGame(dimension, shuffler);
+//		game.
 		
 	}
 	
 	@Test
-	public void moveEmptyCellTest(){
+	public void moveUpEmptyCellTest(){
+		PuzzleGame game = new PuzzleGame(3, new ShufflePuzzleLevelTest());
 		
+		Position startPosition = game.readEmptyCellPosition();
+		game.moveEmptyCell(Direction.UP);
+		Position endPosition = game.readEmptyCellPosition();
+		
+		assertEquals(endPosition.getLine(),startPosition.getLine()-1);
 	}
 	
-//	public static void main(String[] args){
-//		Puzzle game = new PuzzleGame(3, new ShufflePuzzleLevelTest());
-//		System.out.println(game);
-//	}
+	@Test
+	public void moveDownEmptyCellTest(){
+		PuzzleGame game = new PuzzleGame(3, new ShufflePuzzleLevelTest());
+		
+		Position startPosition = game.readEmptyCellPosition();
+		game.moveEmptyCell(Direction.DOWN);
+		Position endPosition = game.readEmptyCellPosition();
+		
+		assertEquals(endPosition.getLine(),startPosition.getLine()+1);
+	}
+
+	@Test
+	public void moveLeftEmptyCellTest(){
+		PuzzleGame game = new PuzzleGame(3, new ShufflePuzzleLevelTest());
+		
+		Position startPosition = game.readEmptyCellPosition();
+		game.moveEmptyCell(Direction.LEFT);
+		Position endPosition = game.readEmptyCellPosition();
+		
+		assertEquals(endPosition.getColumn(),startPosition.getColumn()-1);
+	}
+	
+	@Test
+	public void moveRightEmptyCellTest(){
+		PuzzleGame game = new PuzzleGame(3, new ShufflePuzzleLevelTest());
+		
+		Position startPosition = game.readEmptyCellPosition();
+		game.moveEmptyCell(Direction.RIGHT);
+		Position endPosition = game.readEmptyCellPosition();
+		
+		assertEquals(endPosition.getColumn(),startPosition.getColumn()+1);
+	}
 }
-
-
-/*
- * Testar:
- * 
- * putTilesInTheBoard()
- * moveEmptyCell()
- * */
-
