@@ -15,4 +15,5 @@ Professora: Patrícia Vilain
 * [Aula 4](https://github.com/fmreina/ine5448-TopicosEspeciais-Testes/blob/master/notas-de-aula/Aula-4-Hamcrest): Hamcrest
 	- Exercícios de sala em [codigo/SistemaBancario.HamcrestTests](https://github.com/fmreina/ine5448-TopicosEspeciais-Testes/tree/master/codigo/SistemaBancario.HamcrestTests)
 
-* [Aula 5](https://github.com/fmreina/ine5448-TopicosEspeciais-Testes/tree/master/notas-de-aula/):
+* [Aula 5](https://github.com/fmreina/ine5448-TopicosEspeciais-Testes/blob/master/notas-de-aula/Aula-5-Cobertura-Testes-Unidade):
+	- Exercícios de sala em [codigo/EightPuzzleGame](https://github.com/fmreina/ine5448-TopicosEspeciais-Testes/tree/master/codigo/EightPuzzleGame/src/tests)
