@@ -6,11 +6,9 @@ import exceptions.ExceptionInvalidPosition;
 
 public class PuzzleGame implements Puzzle{
 	
-	//alterado para o teste
-//	private final SquareBoard board;
 	protected final SquareBoard board;
-	private final Map<Tile,Position> positionsOfTiles;
-	private Position emptyCell;
+	protected final Map<Tile,Position> positionsOfTiles;
+	protected Position emptyCell;
 	private final SquareBoard boardWithFinalState;
 	
 
@@ -31,8 +29,6 @@ public class PuzzleGame implements Puzzle{
 		
 	}
 	
-	// alterado para o teste
-//	private void putTilesInTheBoard(SquareBoard t, List<Tile> list) {
 	protected void putTilesInTheBoard(SquareBoard t, List<Tile> list) {
 		Iterator<Tile> tilesListIterator = list.iterator();		
 		//from first line to the line before the last
@@ -188,13 +184,4 @@ public class PuzzleGame implements Puzzle{
 		return this.board.toString();	
 	}
 	
-	//TODO: delete
-	public Position readEmptyCellPosition(){
-		return emptyCell;
-	}
-	
-	//TODO: delete
-	public SquareBoard getBoard(){
-		return board;
-	}
 }
