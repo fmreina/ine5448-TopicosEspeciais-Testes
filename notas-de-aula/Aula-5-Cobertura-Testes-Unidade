@@ -1,0 +1,39 @@
+Aula 5 - Cobertura nos testes de unidade - 04/04/2017
+
+- Exercício: teste em EightPuzzleGame
+
+Teste Completo
+ - como é bem difícil de se fazer um teste completo, seleciona-se um subconjunto dos casos de teste
+
+Teste Caixa Preta
+  - aplicado nas unidade dos programa e no programa inteiro
+  - não se preocupa com cada linha do código
+
+Teste Caixa Branca
+  - testa-se "cada linha" do código
+  - teste de cobertura
+
+Teste de fluxo de Controle
+  - selecionar alguns caminhos na unidade do programa e observar a saída
+    - deve-se encontrar entradas que passem por todos os caminhos selecionados
+    - faz-se um grafo de controle de unidade (diagrama)
+  - aplicavel à unidades de mais baixo nível
+  - pode ter um grande número de caminhos
+    - como selecionar o melhor caminho?
+
+Seleções de caminho
+  - todos os construtores devem ser executados ao menos uma vez
+  - deve se evitar repetir caminhos para economizar recursos
+  - saber quais características devem ser testadas
+
+  Critérios:
+    - seleção de todos
+    - seleção de caminhos que passem por todos os comandos
+      - cobertura completa se todos os comandos foram executados ao menos uma vez
+      - é o critério mais fraco
+    - seleção de caminhos com melhor cobertura de ramos
+      - ramo: aresta de saída de um nó do grafo de cobertura
+      - cobertura completa é selecionar caminhos de forma que todos os ramos sejam executados ao menos uma vez
+    - ...
+
+  - O desafio é selecionar o menor número de caminhos que cubram a maior parte do código ou abrangem todos os comandos
