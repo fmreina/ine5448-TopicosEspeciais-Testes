@@ -20,4 +20,5 @@ Professora: Patrícia Vilain
 
 	- [Diagrama 1 - CFG](https://github.com/fmreina/ine5448-TopicosEspeciais-Testes/blob/master/notas-de-aula/putTilesInTheBoard.png)
 
-* [Aula 6](https://github.com/fmreina/ine5448-TopicosEspeciais-Testes/blob/master/notas-de-aula/Aula-6): Apresentação Lucas
+* [Aula 6](https://github.com/fmreina/ine5448-TopicosEspeciais-Testes/blob/master/notas-de-aula/Aula-6-Estoria): Framework Estória por Lucas Pereira ([github](https://github.com/lucasPereira/estoria))
+- Exercícios de sala em [codigo/SistemaBancario.Estoria](https://github.com/fmreina/ine5448-TopicosEspeciais-Testes/tree/master/codigo/SistemaBancario.Estoria)

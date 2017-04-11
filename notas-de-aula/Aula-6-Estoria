@@ -1,0 +1,57 @@
+Aula 6 - Apresentação Lucas - 11/04/2017
+    (Ordem da aula trocada com a da próxima semana(Testes de Fluxo de Dados) para configuração de ferramenta)
+
+
+Estratégias de teste (Revisão)
+  - Inline Setup
+    - a configuração do teste é feita no corpo do próprio teste
+    - gera duplicação de código de configuração
+    - dificuldade de manutenção
+    - melhor legibilidade
+    - liberdade de organização das classes de teste
+
+  - Implicit Setup
+    - é feito um método a parte de setup (@Before no JUnit)
+    - perde a liberdade de organização das classes. Todos os testes da mesma classe usarão esta mesma setup
+    - esta acoplado ao módulo
+    - evita duplicação de código
+    - perde-se um pouco a sensação de casa e efeito
+    - o nome do setup deve refletir claramente a configuração do método
+    - um fedor comum é quando existem fixtures(configurações) no setup que não são usadas por todos os testes
+    - deve conter apenas as configurações comuns à todos os testes. Todo o restante deve ser configurado por meio de inline ou delegated setup
+
+  - Delegated Setup
+    - utiliza um método delegado para realizar a configuração do teste
+    - responsável por construir as fixtures
+    - dificulta a legibilidade
+    - auxilia no caso de configurações muito longas
+    - o método deve ter um nome significativo para facilitar seu entendimento
+
+
+Meszaros -> Princípio da independência dos Testes
+  testes devem executar de forma independentes uns dos outros
+
+  abordagens: Tear Down ou Reconfigurar uma nova base
+
+Estratégia Desenvolvida
+  - objetivo é usar fixtures de outras classes
+  - reutilização de código
+  - test fixtures definidos em uma classe de testes podem levar o SUT para o estado necessário por outro teste
+  - Classes Provedoras
+  - Classes Consumidoras (@FixtureSetup(Classe.class))
+  - só executa os métodos de configuração (@Before)
+  - utiliza as fixtures de outras classes anotadas na classe consumidora com @Fixture
+  - usa o princípio da transitividade (uma classe pode usar a fixture da classe "avô")
+
+
+        (D)       Normalmente ocorre D B D C A
+       /   \      Criasse duas instancias de D usadas respsctivamente por B e C
+    (B)     (C)   Para que D seja a mesma instancia para todas as classes deve-se usar a anotação @Singular
+       \   /      Assim será ocorrerá a sequência D B C A
+        (A)       Definido a ordem das classes, um mesmo nome de variável declarada em classes diferentes irá respentar a ordem
+                  portanto se x é declarado em B e C, A usará o x declarado em B
+
+Framework 'Estória' - por Lucas Pereira
+  - permite a reutilização de CÓDIGO
+  - extenção do JUnit
+  - anotações @FixtureSetup, @Fixture, @Singular, @Safe
