@@ -9,8 +9,6 @@ import br.ufsc.ine.leb.projetos.estoria.Fixture;
 import br.ufsc.ine.leb.projetos.estoria.FixtureSetup;
 import br.ufsc.ine.leb.sistemaBancario.Agencia;
 import br.ufsc.ine.leb.sistemaBancario.Banco;
-import br.ufsc.ine.leb.sistemaBancario.Moeda;
-import br.ufsc.ine.leb.sistemaBancario.SistemaBancario;
 
 @FixtureSetup(TesteBancoBB.class)
 public class TesteAgenciaCentro {
@@ -22,12 +20,14 @@ public class TesteAgenciaCentro {
 	
 	@Before
 	public void configurar(){
-	
+		agenciaCentro = bancoDoBrasil.criarAgencia("Centro");
 	}
 	
 	@Test
 	public void testeBancoDoBrasil(){
-
+		assertEquals("001", agenciaCentro.obterIdentificador());
+		assertEquals("Centro", agenciaCentro.obterNome());
+		assertEquals("Banco do Brasil", agenciaCentro.obterBanco().obterNome());
 	}
 
 }
