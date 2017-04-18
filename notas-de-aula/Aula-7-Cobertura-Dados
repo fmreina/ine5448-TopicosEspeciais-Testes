@@ -1,0 +1,58 @@
+Aula 7 - Cobertura-Dados - Teste de Fluxo de Dados & Testes de Domínio - 18/04/2017
+
+Teste de Fluxo de Dados
+  - testes são feitos com base nos valores dos dados.
+  - código analisado para encontrar potenciais defeitos/anomalias no fluxo de dados
+
+  Anomalias:
+    - Variáveis definidas e definidas novamente
+        comando redundante
+        comando tem alguma falta -> pode gerar erro
+        falta de comando
+    - Variáveis não definidas mas referênciadas
+        inicialização esquecida
+    - Variáveis definidas mas não referênciadas
+        código morto
+        variáveis não mais usadas depois de uma fatoração
+
+
+               .<-------------.<----------.
+              /              /             \
+      .->(Undefined) --> (Defined) --> (Defined&Referenced)<-.
+      |___|   \              |                           |___|                     [*completar estudo com os slides]
+               \             v
+                '----->  (Abnormal)<-.
+                                |____|
+
+
+Passos de Fluxo de Dados
+  1- desenhar um fluxo de dados da unidade
+    Definições:
+      - Global c-use -> variavel declarada em nodos anteriores e usada posteriormente
+      - Definition clear path -> intervalo em que uma variável não foi modificada, definida ou indefinida
+      - Global definition
+      - Predicados e p-use
+      - Simple path
+      - Loop-free path
+      - Complete path
+      - DU-path -> camniho de definição em que o primeiro nodo tem uma definição e a variável é usada no ultimo nodo
+  2- selecionar um critério de seleção de fluxo
+    Critérios:
+      - All-defs -> para cada variável encontrar caminhos COMPLETOS em que ela foi definida e usada
+      - All-c-use -> para cada variável selecionar caminhos completos em que ela seja usada em um nodo
+      - All-p-uses -> para cada variável selecionar caminhos completos em que ela seja usada em uma aresta como predicado (condicional)
+      - All-p-uses/Some-c-uses -> se a variável não tem p-use o critério é reduzido para algum c-use
+      - All-c-uses/Some-p-uses -> se a variável não tem c-use o critério é reduzido para algum p-use
+      - All-uses
+      - All-du-paths
+  3- identifique os caminhos
+  4- derivar expreções de predicado de caminho a partir dos caminhos selecionados
+  5- gerar valores de entradas de teste
+
+Variáveis são:
+  definidas
+  usadas
+  indefinidas / mortas
+
+
+Testes de Domínio
