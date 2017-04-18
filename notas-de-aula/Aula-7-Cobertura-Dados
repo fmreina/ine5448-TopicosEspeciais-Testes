@@ -43,16 +43,19 @@ Passos de Fluxo de Dados
       - All-p-uses -> para cada variável selecionar caminhos completos em que ela seja usada em uma aresta como predicado (condicional)
       - All-p-uses/Some-c-uses -> se a variável não tem p-use o critério é reduzido para algum c-use
       - All-c-uses/Some-p-uses -> se a variável não tem c-use o critério é reduzido para algum p-use
-      - All-uses
-      - All-du-paths
+      - All-uses -> para cada variável selecionar todos os caminhos com c-uses e p-uses
+      - All-du-paths -> todos os caminhos possíveis do grafo
   3- identifique os caminhos
   4- derivar expreções de predicado de caminho a partir dos caminhos selecionados
   5- gerar valores de entradas de teste
 
-Variáveis são:
-  definidas
-  usadas
-  indefinidas / mortas
+Variáveis são .->  definidas
+              \.-> usadas
+               \.-> indefinidas / mortas
 
+Ferramenta Scova - Martim Azevedo de Nascimento:
+  Ferramenta de cálculo de cobertura de estados
+  Java 1.6
+    (github.com/martim00/scova)
 
 Testes de Domínio

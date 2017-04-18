@@ -15,7 +15,7 @@ Professora: Patrícia Vilain
 * [Aula 4](https://github.com/fmreina/ine5448-TopicosEspeciais-Testes/blob/master/notas-de-aula/Aula-4-Hamcrest): Hamcrest
 	- Exercícios de sala em [codigo/SistemaBancario.HamcrestTests](https://github.com/fmreina/ine5448-TopicosEspeciais-Testes/tree/master/codigo/SistemaBancario.HamcrestTests)
 
-* [Aula 5](https://github.com/fmreina/ine5448-TopicosEspeciais-Testes/blob/master/notas-de-aula/Aula-5-Cobertura-Testes-Unidade): Cobertura de Testes
+* [Aula 5](https://github.com/fmreina/ine5448-TopicosEspeciais-Testes/blob/master/notas-de-aula/Aula-5-Cobertura-Testes-Unidade): Cobertura de Testes - Fluxo de Controle
 	- Exercícios de sala em [codigo/EightPuzzleGame](https://github.com/fmreina/ine5448-TopicosEspeciais-Testes/tree/master/codigo/EightPuzzleGame/tests/domain/)
 
 	- [Diagrama 1 - CFG](https://github.com/fmreina/ine5448-TopicosEspeciais-Testes/blob/master/notas-de-aula/putTilesInTheBoard.png)
@@ -23,7 +23,7 @@ Professora: Patrícia Vilain
 * [Aula 6](https://github.com/fmreina/ine5448-TopicosEspeciais-Testes/blob/master/notas-de-aula/Aula-6-Estoria): Framework Estória por Lucas Pereira ([github](https://github.com/lucasPereira/estoria))
 - Exercícios de sala em [codigo/SistemaBancario.Estoria](https://github.com/fmreina/ine5448-TopicosEspeciais-Testes/tree/master/codigo/SistemaBancario.Estoria)
 
-* [Aula 7](https://github.com/fmreina/ine5448-TopicosEspeciais-Testes/blob/master/notas-de-aula/Aula-7-Cobertura-Dados):
+* [Aula 7](https://github.com/fmreina/ine5448-TopicosEspeciais-Testes/blob/master/notas-de-aula/Aula-7-Cobertura-Dados): Cobertura-Dados
 <!--
 - Exercícios de sala em [codigo/SistemaBancario.Estoria](https://github.com/fmreina/ine5448-TopicosEspeciais-Testes/tree/master/codigo/SistemaBancario.Estoria)
 -->
