@@ -27,3 +27,5 @@ Professora: Patrícia Vilain
 <!--
 - Exercícios de sala em [codigo/SistemaBancario.Estoria](https://github.com/fmreina/ine5448-TopicosEspeciais-Testes/tree/master/codigo/SistemaBancario.Estoria)
 -->
+
+* [Aula 8](https://github.com/fmreina/ine5448-TopicosEspeciais-Testes/blob/master/notas-de-aula/Aula-8-Teste-de-Dominio): Testes de Domínio

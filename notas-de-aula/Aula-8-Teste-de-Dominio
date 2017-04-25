@@ -1,0 +1,19 @@
+Aula 8 - Teste de Domínio - 25/04/2017
+
+OBS.: Estudar slides
+
+Dominio de entrada
+
+Erro computacional -> dado de entrada faz com que o programa execute o caminho correto mas a saida esta errada
+
+Erro de dominio -> dado de entrada faz com que o caminho de execução seja errado
+
+
+Passos:
+1- desenhar grafo de fluxo de Controle
+2- expressar predicados somente en termos de valores de entrada
+
+
+
+Domínio
+Limites de Domínio
