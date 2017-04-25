@@ -13,7 +13,15 @@ Passos:
 1- desenhar grafo de fluxo de Controle
 2- expressar predicados somente en termos de valores de entrada
 
-
-
 Domínio
 Limites de Domínio
+
+
+--//--
+
+Testes de mutação
+Objetivo é encontrar deficiências no casos de teste
+
+Definições:
+- Mutante equivalente -> irrelevante
+- Mutante Vivo/Morto
