@@ -29,3 +29,7 @@ Professora: Patrícia Vilain
 -->
 
 * [Aula 8](https://github.com/fmreina/ine5448-TopicosEspeciais-Testes/blob/master/notas-de-aula/Aula-8-Teste-de-Dominio): Testes de Domínio
+
+* [Aula 9](https://github.com/fmreina/ine5448-TopicosEspeciais-Testes/blob/master/notas-de-aula/Aula-9-Exercicios): Exercicios (Scova, PIT, MuJava)
+
+* [Aula 10](https://github.com/fmreina/ine5448-TopicosEspeciais-Testes/blob/master/notas-de-aula/Aula-10-Exercicios): Exercicios (Poker, Leilão)
