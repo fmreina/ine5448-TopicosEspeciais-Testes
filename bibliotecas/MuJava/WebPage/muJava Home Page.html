@@ -1,0 +1,916 @@
+
+<!-- saved from url=(0034)https://cs.gmu.edu/~offutt/mujava/ -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>muJava Home Page</title>
+
+<meta name="description" content="A free class-level OO mutation system for Java.">
+<meta name="keywords" content="mutation system software testing Java object-oriented integration testing">
+
+  <!-- lightpurple.jpg -->
+  <!-- lgren033.jpg -->
+  <!-- backgroundGray.jpg -->
+  <!-- bgPattern3.jpg    V3 -->
+  <!--
+  April 2013
+  smudge-pale-pink.gif is okay.
+  smudge-pale-blue.gif is okay
+  -->
+<style>
+  body{background-image:url(../images/subtlePeach.jpg)}
+
+  p{text-align:justify}
+  li{text-align:justify}
+  a:hover {background:white}
+  span.mujava{font-weight:bold;font-style:italic}
+  span.subhead{font-weight:bold;background-color:#DFD6E2;text-decoration:underline}
+  p.step{font-weight:bold;color:#307D7E;font-size:115%}
+  p.command{margin-left:20px;color:#ffffff;font-size:80%}
+  .note{font-weight:bold;color:#ff0000}
+  .heading{font-weight:bold;font-size:150%;font-family:Sans-serif}
+</style>
+</head>
+
+<body>
+
+<center>
+<table border="0" cellpadding="0" bgcolor="#ffeecc">
+  <tbody><tr><td>
+   <font size="10">
+    <span class="mujava">µJava</span> <b>Home Page</b>
+   </font>
+</td></tr></tbody></table>
+<font color="red">Version 4, June 2013
+        <br>JUnit tests,
+        Java 1.6 features (including generics),
+        <!--
+        support for generics,
+        annotations,
+        enumerations,
+        varargs,
+        enhanced for-each loops,
+        static imports,
+        -->
+        and fault fixes.
+        <br>(<em>minor bug fixes, May 2014, August 2016</em>)
+</font>
+</center>
+<br>
+
+April 2015:
+<span class="mujava">µJava</span>
+has been released as open source on
+<a href="https://github.com/jeffoffutt/muJava">github</a> under the
+<a href="https://www.apache.org/licenses/LICENSE-2.0">Apache license</a>.
+<img src="./muJava Home Page_files/new-onstar.gif" width="21">
+<br>
+A command line interface to
+<span class="mujava">µJava</span>,
+<a href="https://cs.gmu.edu/~offutt/mujava/muscript">muScript</a>,
+was released March 2014.
+<br>
+The <a href="https://cs.gmu.edu/~offutt/mujava/index-v3-nov2008.html">Version 3 page</a> is still available.
+
+<!-- orange Stripe -->
+<center><table border="1" cellpadding="0" width="100%">
+<tbody><tr><td align="left" bgcolor="#ffaa77">
+<font size="-5"> &nbsp; </font><!-- Need space after ; -->
+</td></tr></tbody></table></center>
+<!-- End orange Stripe -->
+
+<p>
+<span class="mujava">µJava</span>
+(<span class="mujava">muJava</span>)
+is a mutation system for Java programs.
+It automatically generates mutants for both traditional mutation testing
+and class-level mutation testing.
+<span class="mujava">µJava</span>
+can test individual classes and packages of multiple classes.
+Tests are supplied by the users as
+sequences of method calls to the classes under test
+encapsulated in
+<strike>methods in separate classes</strike>
+<a href="http://junit.org/">JUnit</a> classes.
+
+</p><p>
+<span class="mujava">µJava</span>
+is the result of a collaboration between
+two universities,
+Korea Advanced Institute of Science and Technology (KAIST) in S. Korea and
+George Mason University in the USA.
+The research collaborators are
+<!-- a href="http://salmosa.kaist.ac.kr/~ysma/" -->Yu Seung Ma,
+PhD candidate at KAIST in Korea,
+<!-- a href="http://salmosa.kaist.ac.kr/LAB/MEMBER/yrkwon.html" -->Dr. Yong Rae Kwon,
+Professor at KAIST in Korea,
+and
+<a href="http://www.cs.gmu.edu/~offutt/">Dr. Jeff Offutt</a>,
+Professor at George Mason University in the USA.
+Most of the design was by Jeff and YuSeung,
+and the original software development was done by YuSeung.
+<span class="mujava">µJava</span>
+was modified extensively in 2012 and 2013 by
+<a href="http://www.cs.gmu.edu/~nli1/">Nan Li</a>.
+<!--
+This site is mirrored
+<a href="http://www.cs.gmu.edu/~offutt/mujava/">at GMU</a>
+and
+<a href="http://salmosa.kaist.ac.kr/LAB/MuJava/">at KAIST</a>.
+-->
+Source files are available on a limited basis to researchers in mutation analysis;
+please contact
+<a href="http://www.cs.gmu.edu/~offutt/">Offutt</a>
+for more information
+
+</p><p>
+We offer
+<span class="mujava">µJava</span>
+on an "as-is" basis as a service to the community.
+We welcome comments and feedback,
+but do not guarantee support in the form of
+question answering,
+fault fixing, or improvements
+(in other words, we don't have money for support, just good intentions).
+This page contains the following:
+</p><ol>
+<li>An <a href="https://cs.gmu.edu/~offutt/mujava/#Overview">overview</a> of object-oriented Java and
+     <span class="mujava">µJava</span>.
+</li><li><a href="https://cs.gmu.edu/~offutt/mujava/#Links">Links</a> to downloadable files.
+</li><li><a href="https://cs.gmu.edu/~offutt/mujava/#Install">Detailed description</a> of how to install,
+      set up, and run <span class="mujava">µJava</span>.
+</li><li><a href="https://cs.gmu.edu/~offutt/mujava/#References">References</a> to published papers.
+</li></ol>
+
+<p>
+<span class="note">
+March 2007:
+<a href="http://collaboration.csc.ncsu.edu/laurie">Laurie Williams</a>
+and Ben Smith of NC State have modified µJava
+to be an
+<a href="http://www.eclipse.org/">Eclipse</a> plugin.
+Their version is available from
+<a href="http://muclipse.sourceforge.net/">sourcefourge</a>.
+</span>
+
+<!-- orange Stripe -->
+</p><center><table border="1" cellpadding="0" width="100%">
+<tbody><tr><td align="left" bgcolor="#ffaa77">
+<font size="-5"> &nbsp; </font><!-- Need space after ; -->
+</td></tr></tbody></table></center>
+<!-- End orange Stripe -->
+
+<!-- ******************************************** -->
+<a name="Overview"></a>
+<p class="heading">I. Overview</p>
+
+<p>
+<span class="mujava">µJava</span> was built by Ma, Offutt and Kwon [1].
+<span class="mujava">µJava</span> uses two types of mutation operators,
+class level and method level.
+The class level mutation operators were designed for Java classes
+by Ma, Kwon and Offutt [2],
+and were in turn designed from a categorization of object-oriented faults
+by Offutt, Alexander et al. [3].
+<span class="mujava">µJava</span> creates object-oriented mutants
+for Java classes
+according to 24 operators that are specialized to object-oriented faults.
+Method level (traditional) mutants are based on the selective operator set
+by Offutt et al. [4].
+After creating mutants,
+<span class="mujava">µJava</span>
+allows the tester to enter and run tests,
+and evaluates the mutation coverage of the tests.
+
+</p><p>
+In
+<span class="mujava">µJava</span>,
+tests for the class under test are encoded in separate classes
+that make calls to methods in the class under test.
+Mutants are created and executed automatically.
+Equivalent mutants must be identified by hand.
+
+</p><p>
+We have separate descriptions for the
+<a href="https://cs.gmu.edu/~offutt/mujava/mutopsClass.pdf">class-level mutation operators</a>
+and the
+<a href="https://cs.gmu.edu/~offutt/mujava/mutopsMethod.pdf">method-level mutation operators</a>
+used by
+<span class="mujava">µJava</span> in PDF.
+
+
+</p><p>
+<span class="subhead">History </span>
+</p><ul>
+<li> 2003. First released as JMutation (<b>J</b>ava <b>Mutation</b> System).
+</li><li> 2004. The name was changed to MuJava (<b>Mu</b>tation System for <b>Java</b>).
+</li><li> 2005. Software Copyright Registration,  ALL RIGHTS RESERVED.
+</li><li> 2005. Version 2 released with several fault fixes and modified mutation operators.
+</li><li> 2008. Version 3 released with minimal support for Java 1.5 and 1.6.
+</li><li> 2013. Version 4 released to support JUnit tests and Java 1.6 language features,
+           including
+        generics,
+        annotations,
+        enumerations,
+        varargs,
+        enhanced for-each loops,
+        and static imports.
+</li><li> 2015. Additional and improved error messages.
+           Bug fixes for OpenJava.
+           Licensing changed to the <a href="https://www.apache.org/licenses/LICENSE-2.0">Apache license</a>.
+</li></ul>
+
+<!-- orange Stripe -->
+<center><table border="1" cellpadding="0" width="100%">
+<tbody><tr><td align="left" bgcolor="#ffaa77">
+<font size="-5"> &nbsp; </font><!-- Need space after ; -->
+</td></tr></tbody></table></center>
+<!-- End orange Stripe -->
+
+<!-- ******************************************** -->
+<a name="Links"></a>
+<p class="heading">II. Downloading µJava</p>
+
+<p>
+Although installing
+<span class="mujava">µJava</span>
+is not technically difficult or complicated,
+it will require a little more effort than installing many commercial packages.
+<span class="mujava">µJava</span>
+can run on Unix, Linux, and Windows platforms.
+You will need to download and deploy three files;
+two Java "jar" files and a configuration file.
+
+</p><center><table border="1" cellpadding="3" bgcolor="#ffeecc">
+<tbody><tr>
+  <td><a href="https://cs.gmu.edu/~offutt/mujava/mujava.jar">mujava.jar</a>
+  </td><td>µJava system library
+</td></tr>
+<tr>
+  <td><a href="https://cs.gmu.edu/~offutt/mujava/openjava.jar">openjava.jar</a>
+  </td><td>OpenJava library that is adapted for µJava
+      (<a href="http://www.csg.is.titech.ac.jp/openjava/" target="_blank">OpenJava WWW page</a>)
+</td></tr>
+<!-- Won't need this soon.
+-->
+<tr>
+  <td><a href="https://cs.gmu.edu/~offutt/mujava/mujava.config">mujava.config</a>
+  </td><td>A file to specifies the µJava system home directory
+</td></tr>
+</tbody></table></center>
+
+<p>
+The two jar files should be placed in a directory on disk that all
+users who need to use
+<span class="mujava">µJava</span>
+can access,
+for example, in <tt>C:\mujava\</tt>.
+</p>
+
+<p>
+<span class="mujava">µJava</span>
+was updated in April 2013
+to work with JUnit and generics.
+The old versions are still available if you need them.
+</p>
+
+<p>
+<span class="subhead">Version 3</span>
+
+</p><center><table border="1" cellpadding="3" bgcolor="#D0F0F0">
+<tbody><tr>
+  <td><a href="https://cs.gmu.edu/~offutt/mujava/mujava-v3.jar">mujava-v3.jar</a>
+  </td><td>µJava system library
+</td></tr>
+<tr>
+  <td><a href="https://cs.gmu.edu/~offutt/mujava/openjava2005.jar">openjava2005.jar</a>
+  </td><td>OpenJava library that is adapted for µJava
+      (<a href="http://www.csg.is.titech.ac.jp/openjava/">OpenJava WWW page</a>)
+</td></tr>
+<tr>
+  <td><a href="https://cs.gmu.edu/~offutt/mujava/mujava-v3.config">mujava-v3.config</a>
+  </td><td>A file to specifies the µJava system home directory
+</td></tr>
+</tbody></table></center>
+
+<p class="note">
+Issues with version 3:
+</p><ul>
+ <li><span class="mujava">µJava</span> could not compile classes that use Java generics.
+     (This was corrected in version 4.)
+ </li><li>Fault fix, 5-December-2011: The program did not properly initialize the time-out counter,
+     so time-out only worked if users explicitly set it.
+     This caused <span class="mujava">µJava</span> to freeze during execution sometimes.
+ </li><li>Fault fix, 6-December-2011: muJava implemented the ROR operator incorrectly.
+</li></ul>
+
+
+<p>
+<span class="mujava">µJava</span>
+was updated in December 2008
+to work with Java 1.5 and 1.6.
+The old versions are still available if you need them.
+
+</p><p>
+<span class="subhead">Version 2</span>
+
+</p><center><table border="1" cellpadding="3" bgcolor="#DFD6E2">
+<tbody><tr>
+  <td><a href="https://cs.gmu.edu/~offutt/mujava/mujava-v2.jar">mujava-v2.jar</a>
+  </td><td>µJava system library
+  <img src="./muJava Home Page_files/new-onstar.gif" width="21">
+  <span style="font-style:italic; color:red">(Updates and fault fixes, May 2006)</span>
+  <img src="./muJava Home Page_files/new-onstar.gif" width="21">
+</td></tr>
+<tr>
+  <td><a href="https://cs.gmu.edu/~offutt/mujava/adaptedOJ.jar">adaptedOJ.jar</a>
+  </td><td>OpenJava library that is adapted for µJava
+      (<a href="http://www.csg.is.titech.ac.jp/openjava/">OpenJava WWW page</a>)
+</td></tr>
+<tr>
+  <td><a href="https://cs.gmu.edu/~offutt/mujava/mujava.config">mujava.config</a>
+  </td><td>A file to specifies the µJava system home directory
+</td></tr>
+</tbody></table></center>
+
+
+<p>
+The mujava.jar file was updated in May 2006.
+The old version,
+<a href="https://cs.gmu.edu/~offutt/mujava/mujava-v1.jar">mujava-v1.jar</a>,
+is still available if you need it.
+
+</p><p>
+Although we have no license agreement,
+if you use
+<span class="mujava">µJava</span>,
+we would like to hear about it.
+Particularly, if you publish papers that rely on
+<span class="mujava">µJava</span>,
+please send an email to "offutt [at] gmu.edu" and we will
+add the reference to the
+<span class="mujava">µJava</span> web page.
+
+</p><p>
+<span class="subhead">Version 1</span>
+
+</p><p>
+A new version of
+<span class="mujava">µJava</span>
+was made available in summer 2005.
+Some of the operators were modified
+and numerous fault fixes were made.
+For completeness,
+the previous version is still available,
+but we recommend that new users use the current version.
+
+</p><center><table border="1" cellpadding="3" bgcolor="#dddddd">
+<tbody><tr>
+  <td colspan="3"><a href="https://cs.gmu.edu/~offutt/mujava/instructionsVersion1.html">Version 1 instructions</a>
+</td></tr><tr>
+  <td colspan="3"><a href="https://cs.gmu.edu/~offutt/mujava/diffVersion1Version2.html">Differences between version 1 and version 2</a>
+</td></tr><tr>
+  <td colspan="3">Downloadable files:
+</td></tr><tr>
+  <td><a href="https://cs.gmu.edu/~offutt/mujava/version1/jmutation.jar">jmutation.jar</a>
+  </td><td><a href="https://cs.gmu.edu/~offutt/mujava/version1/openjavaHelper.jar">openjavaHelper.jar</a>
+  </td><td><a href="https://cs.gmu.edu/~offutt/mujava/version1/jmutation.config">jmutation.config</a>
+</td></tr>
+</tbody></table></center>
+
+<!-- orange Stripe -->
+<center><table border="1" cellpadding="0" width="100%">
+<tbody><tr><td align="left" bgcolor="#ffaa77">
+<font size="-5"> &nbsp; </font><!-- Need space after ; -->
+</td></tr></tbody></table></center>
+<!-- End orange Stripe -->
+
+<!-- ******************************************** -->
+<a name="Install"></a>
+<p class="heading">III. Using µJava to Test Classes</p>
+
+<p>
+The
+<span class="mujava">muJava</span>
+system requires that the Java CLASSPATH be modified to include the
+<span class="mujava">muJava</span> jar,
+the openjava jar,
+the JUnit library,
+and and the Java tools.jar files.
+Also, the general PATH variable must include the java <i>bin</i> directory;
+this is usually set automatically when java was installed,
+but not always.
+Then one GUI (Java applet) is used to generate mutants,
+the tester must create tests,
+and another GUI is used to run mutants.
+
+
+<!-- Small orange Stripe -->
+<table border="1" cellpadding="0" width="100%" height="10">
+<tbody><tr><td align="left" bgcolor="#ffaa77">
+</td></tr></tbody></table>
+<!-- End Small orange Stripe -->
+
+<!-- ------------------------------------- -->
+<a name="environment"></a>
+</p><p class="step">1. Environment Settings for the
+<span class="mujava">muJava</span> System</p>
+
+<p>
+There are three steps to setting up the environment for
+<span class="mujava">muJava</span>,
+(1) CLASSPATH,
+(2) setting the config file,
+and
+(3) creating subdirectories.
+
+</p><ol type="i">
+<li>The Java
+    CLASSPATH must include two
+    <span class="mujava">µJava</span>
+    jar files and one standard Java jar file.
+    <b>tools.jar</b> is standard with Java (JDK) compilers and is
+    probably located in the "JavaHome/lib/" directory.
+    The two
+    <span class="mujava">µJava</span>
+    files are <b>mujava.jar</b> and <b>openjava.jar</b>,
+    which are downloaded from this site.
+
+<p>
+<span class="subhead">Windows</span>
+
+</p><p>In a DOS window,
+    use the following command (assuming that classes is under C:\mujava):
+
+    <table border="1" cellpadding="0" cellspacing="0" width="90%" bgcolor="#000066" height="31">
+     <tbody><tr><td><p class="command">
+        set CLASSPATH=%CLASSPATH%;C:\mujava\mujava.jar;C:\mujava\openjava.jar;C:\jdk1.7.0\lib\tools.jar;C:\mujava\classes
+     </p></td></tr>
+    </tbody></table>
+
+    In a Cygwin window,
+    use the following command:
+
+    <table border="1" cellpadding="0" cellspacing="0" width="90%" bgcolor="#000066" height="31">
+     <tbody><tr><td><p class="command">
+        CLASSPATH="$CLASSPATH;C:\mujava\mujava.jar;C:\mujava\openjava.jar;C:\jdk1.7.0\lib\tools.jar;C:\mujava\classes" ; export CLASSPATH
+     </p></td></tr>
+    </tbody></table>
+
+    </p><p>
+    To change your CLASSPATH permanently in Windows,
+    go to Start-settings-Control Panel.
+    Double-click System, go to the Advanced tab, and choose Environment Variables.
+    Edit the CLASSPATH variable or create a new variable if there is none.
+    Add the full path to mujava.jar and openjava.jar to the CLASSPATH.
+
+   </p><p>
+   <span class="subhead">Unix</span>
+
+    </p><p>
+    In Unix, set the CLASSPATH environment variable.
+    Assuming the jar files are stored in the home directory of user
+    <tt>mujava</tt>: <br>
+    <tt>CLASSPATH=$CLASSPATH:/home/mujava/mujava.jar:/home/mujava/openjava.jar:/java1.4/jdk1.7.0/lib/tools.jar ; export CLASSPATH</tt>
+    <br>
+    Note that the syntax will vary under different shells,
+    and it will be more convenient to put the command in your setup file
+    such as <tt>.login</tt>, <tt>.bash_profile</tt>, or <tt>.bashrc</tt>.
+
+   </p><p>
+   <span class="subhead">Mac</span>
+
+   </p><p>
+   Open the Terminal, type "echo $JAVA_HOME" and "echo $PATH" and make sure the environment variables JAVA_HOME and PATH are correctly set.<br><br>
+   <img src="./muJava Home Page_files/java_home.png" width="500" height="30" alt="Get JAVA_HOME">
+   <br>
+   <img src="./muJava Home Page_files/path.png" width="500" height="30" alt="Get PATH">
+   <br><br>
+   If you do not know how to install JDK 7 on a Mac, please read the article about
+   <a href="http://docs.oracle.com/javase/7/docs/webnotes/install/mac/mac-jdk.html" target="_blank">how to install JDK 7</a>
+   and <a href="http://www.cyberciti.biz/faq/linux-unix-set-java_home-path-variable/" target="_blank">how to set up the JAVA_HOME and PATH environment variables</a>.
+   
+
+</p></li><li>Next, modify the mujava.config file to point to a directory
+    where you wish to store source Java files and
+    <span class="mujava">muJava</span>
+    temporary files.
+    The directory must be the complete path
+    (either Windows or Unix).
+    For example, the config file may contain the line:
+    <tt>MuJava_HOME=C:\home\mujava\exp</tt>.
+
+    <p>
+    <b>IMPORTANT:</b>
+    It is necessary to copy the config file to the directory you run the
+    <span class="mujava">muJava</span>
+    system in.
+
+</p></li><li>Finally, create a directory structure for the
+    <span class="mujava">muJava</span> system
+    in the $MuJava_HOME directory.
+    Assuming your <em>MuJava_HOME</em> directory is called <tt>MuJava</tt>,
+    the subdirectories should look like:
+
+    <p>
+    <img src="./muJava Home Page_files/dirStructure.jpg" width="141" height="89" align="top">
+
+    </p><p>
+    There should be four subdirectories,
+    used in the following ways.
+
+    <table border="1" cellpadding="2" cellspacing="0" style="border-collapse: collapse;" bordercolor="#111111">
+     <tbody><tr>
+      <td><i>MuJava_HOME</i>\src</td>
+      <td>directory for Java files under test
+     </td></tr>
+      <tr>
+       <td><em>MuJava_HOME</em>\classes</td>
+       <td>directory for compiled
+        classes of Java files from <em>MuJava_HOME</em>\src</td>
+      </tr>
+      <tr>
+       <td><em>MuJava_HOME\testset</em></td>
+       <td>directory for test sets</td>
+      </tr>
+      <tr>
+       <td><em>MuJava_HOME</em>\result</td>
+       <td>directory for generated mutants</td>
+      </tr>
+    </tbody></table>
+
+    </p><p>
+    Create these subdirectories by hand or
+    by using the <span class="mujava">muJava</span>
+    class "mujava.makeMuJavaStructure".
+
+    <table border="1" cellpadding="0" cellspacing="0" width="60%" bgcolor="#000066" height="31">
+     <tbody><tr><td><p class="command">
+      java mujava.makeMuJavaStructure
+     </p></td></tr>
+    </tbody></table>
+
+</p></li></ol> <!-- End environment setup list -->
+
+<p class="note">
+<u>Potential problems</u>:
+We have identified several potential problems with installing
+<span class="mujava">µJava</span>.
+</p><ul>
+<li>It is important that the MuJava_HOME variable <b>NOT</b> have
+   a trailing slash. This will confuse <span class="mujava">µJava</span>.
+</li><li>If you have a different version of the java compiler and the JVM,
+   <span class="mujava">µJava</span> may get confused.
+   This happens sometimes when a new application on your computer updates
+   the JVM.
+   If you have problems compiling or killing mutants,
+   we suggest deleting all Java components and reinstalling the latest version.
+</li><li>If your tools.jar file is out of date (pre Java 1.4, we think),
+   parts of <span class="mujava">µJava</span> may not work.
+</li></ul>
+
+
+<!-- Small orange Stripe -->
+<table border="1" cellpadding="0" width="100%" height="10">
+<tbody><tr><td align="left" bgcolor="#ffaa77">
+</td></tr></tbody></table>
+<!-- End Small orange Stripe -->
+<!-- ------------------------------------- -->
+<a name="generation"></a>
+<p class="step">2. Generating Mutants with <span class="mujava">muJava</span></p>
+
+<p class="note">
+Important note:
+You should run all commands in a directory that contains
+"mujava.config"
+
+</p><ol type="i">
+<li>Put the source files to test to <em>MuJava_HOME</em>\src directory.
+    <span class="mujava">muJava</span>
+    does not check for compilation errors,
+    so all Java files should compile correctly.
+    If the Java file to test needs other Java files or class files,
+    they should also be placed in
+    <em>MuJava_HOME</em>\src.
+
+    For example, suppose you want to test B, which is a child class of A.
+    Then, you should put both A.java and B.java
+    into <i>MuJava_HOME</i>\src.
+
+    If the file has a package structure,
+    you should store the entire package underneath
+    <i>MuJava_HOME</i>\src.
+
+</li><li>Compile all the Java files in <i>MuJava_HOME</i>\src and
+    copy the <tt>.class</tt> files into the <i>MuJava_HOME</i>\classes\
+    directory.
+
+<!--
+<table border="1" cellpadding="0" cellspacing="0" width="60%" bgcolor="#000066" height="31">
+<tr><td><p class="command">
+  java mujava.compileSrc
+</td></tr>
+</table>
+
+<p class=note>
+(NOTE: July 2005, there appears to be a fault and this option does not work.)
+You can compile the classes yourself and copy the .class files manually.
+-->
+
+
+</li><li>Start the GUI from the command line. Use it to generate mutants:
+
+<table border="1" cellpadding="0" cellspacing="0" width="60%" bgcolor="#000066" height="31">
+<tbody><tr><td><p class="command">
+  java mujava.gui.GenMutantsMain
+</p></td></tr>
+</tbody></table>
+
+<p>
+This command should bring up a screen similar to the following:
+
+</p><p>
+</p><center>
+<img src="./muJava Home Page_files/genMutantsScreen.jpg">
+</center>
+
+<p>
+Select the files you want to mutate by clicking in the boxes on the left.
+Select the mutation operators you want to use by selecting their boxes.
+Then push RUN.
+
+</p><p class="note">
+Note:
+The class mutation operators produce far fewer mutants.
+Also note that a number of status messages go to the command window,
+but not the GUI.
+
+</p><p>
+After mutants are generated,
+you can view the mutants in the
+"Class Mutants Viewer" and "Traditional Mutants Viewer" tabs,
+as shown in the following two figures.
+
+</p><center>
+<img src="./muJava Home Page_files/classMutantsViewerScreen.jpg">
+</center>
+
+<br>
+<center>
+<img src="./muJava Home Page_files/tradMutantsViewerScreen.jpg">
+</center>
+
+</li></ol>
+
+<p>
+You may be interested in knowing where the mutant versions
+of the classes are stored.
+They are underneath
+<em>MuJava_HOME</em>\result\.
+The following example shows the directory Stack underneath result,
+with object-oriented mutants in class_mutants
+and traditional mutants in a separate directory.
+
+</p><p>
+A short shell script will help you run
+<span class="mujava">µJava</span>.
+Below is an example shell script for windows
+that creates mutants:
+</p><p>
+<img src="./muJava Home Page_files/genMutantsBatchFile.jpg">
+
+<!-- Small orange Stripe -->
+<table border="1" cellpadding="0" width="100%" height="10">
+<tbody><tr><td align="left" bgcolor="#ffaa77">
+</td></tr></tbody></table>
+<!-- End Small orange Stripe -->
+<!-- ------------------------------------- -->
+<a name="testcase"></a>
+</p><p class="step">3. Making a test set
+
+</p><p>
+A testset in <span class="mujava">muJava</span>
+must be a JUnit test case.
+JUnit test suite is not supported.
+Each test is a method that contains a sequence of calls to methods
+in the class under test.
+The test methods and the test class should have public access.
+
+</p><p>
+Below is an example of a JUnit test class for the class
+<a href="https://cs.gmu.edu/~offutt/mujava/vendingMachine/vendingMachine.java">vendingMachine</a>.
+Its name is
+<a href="https://cs.gmu.edu/~offutt/mujava/vendingMachine/testVendingMachine.java">testVendingMachine</a>.
+The JUnit .class files should be in
+the directory <i>MuJava_HOME</i>\testset\.
+
+<br>
+</p><center>
+<img src="./muJava Home Page_files/testVendingMachine.jpg">
+</center>
+
+
+<!-- Small orange Stripe -->
+<table border="1" cellpadding="0" width="100%" height="10">
+<tbody><tr><td align="left" bgcolor="#ffaa77">
+</td></tr></tbody></table>
+<!-- End Small orange Stripe -->
+<!-- ------------------------------------- -->
+<a name="running"></a>
+<p class="step">4. Running mutants.
+
+</p><p>
+Run the mutants from another GUI.
+Start it with the following command:
+
+<table border="1" cellpadding="0" cellspacing="0" width="60%" bgcolor="#000066" height="31">
+<tbody><tr><td><p class="command">
+  java mujava.gui.RunTestMain
+</p></td></tr>
+</tbody></table>
+
+</p><p>
+You should see the following GUI.
+You can select which collection of mutants to run,
+and which testset to use.
+The "Class Mutants Viewer" and "Traditional Mutants Viewer" tabs
+will show the source view of the mutants.
+You can design tests to kill mutants by finding a live mutant,
+then analyzing the program to decide what input will kill it.
+Remember that between 5% to 20% of the mutants are typically equivalent.
+
+</p><center>
+<!-- IMG src="test.jpg" OLD -->
+<img src="./muJava Home Page_files/killMutantsScreen.jpg">
+</center>
+
+<p>
+And the following will run
+<span class="mujava">µJava</span>
+to kill mutants:
+</p><p>
+<img src="./muJava Home Page_files/killMutantsBatchFile.jpg">
+
+<!-- orange Stripe -->
+</p><center><table border="1" cellpadding="0" width="100%">
+<tbody><tr><td align="left" bgcolor="#ffaa77">
+<font size="-5"> &nbsp; </font><!-- Need space after ; -->
+</td></tr></tbody></table></center>
+<!-- End orange Stripe -->
+
+<!-- ******************************************** -->
+<a name="References"></a>
+<p class="heading">IV. Published papers</p>
+
+<p>
+For awhile we planned to list all papers published using
+<span class="mujava">µJava</span>.
+This became impractical very quickly and is probably impossible.
+Google scholar lists hundreds of citations to the various
+<span class="mujava">µJava</span> papers
+(241 to reference [1] below in December 2011, 311 in December 2012).
+We are glad that this tool has been of so much help!
+</p>
+
+<ol>
+<li><a href="http://www.cs.gmu.edu/~offutt/rsrch/abstracts/mujava.html">
+<em>MuJava : An Automated Class Mutation System</em></a>,
+Yu-Seung Ma, Jeff Offutt and Yong-Rae Kwon.
+<em>Journal of Software Testing, Verification and Reliability</em>,
+15(2):97-133, June 2005.
+
+</li><li><a href="http://cs.gmu.edu/~offutt/rsrch/papers/ast-mujava.pdf">
+    <em>The Class-Level Mutants of MuJava</em></a>,
+ Jeff Offutt, Yu-SeungMa and Yong-Rae Kwon.
+ Workshop on Automation of Software Test (AST 2006), pages 78-84, May 2006, Shanghai, China.
+
+</li><li><a href="http://www.cs.gmu.edu/~offutt/rsrch/abstracts/javamutop.html">
+<em>Inter-Class Mutation Operators for Java</em></a>,
+Yu-Seung Ma, Yong-Rae Kwon and Jeff Offutt.
+Proceedings of the 13th International Symposium on Software Reliability Engineering,
+IEEE Computer Society Press,
+Annapolis MD,
+November 2002,
+pp. 352-363.
+
+</li><li>
+<em>An Experimental Mutation System for Java</em>,
+Jeff Offutt and Yu-Seung Ma and Yong-Rae Kwon.
+ACM SIGSOFT Software Engineering Notes,
+Workshop on Empirical Research in Software Testing,
+29(5):1-4,
+September 2004.
+
+</li><li><a href="http://www.cs.gmu.edu/~offutt/rsrch/abstracts/oofaults01.html">
+<em>A Fault Model for Subtype Inheritance and Polymorphism</em></a>,
+Jeff Offutt, Roger Alexander, Ye Wu, Quansheng Xiao and Chuck Hutchinson.
+Proceedings of the 12th International Symposium on Software Reliability Engineering,
+IEEE Computer Society Press,
+Hong Kong China,
+November 2001,
+84-93.
+
+</li><li><a href="http://www.cs.gmu.edu/~offutt/rsrch/abstracts/select.html">
+<em>An Experimental Determination of Sufficient Mutation Operators</em></a>,
+Jeff Offutt, A. Lee, G. Rothermel and R. Untch and C. Zapf,
+ACM Transactions on Software Engineering Methodology
+April 1996 5(2):99-118.
+
+</li><li><em>Rostra: A Framework for Detecting Redundant Object-Oriented Unit Tests</em>,
+Tao Xie, Darko Marinov, and David Notkin.
+Proceedings of the 19th IEEE International Conference on
+Automated Software Engineering (ASE 2004), Linz, Austria,
+September 2004,
+196-205.
+<br>
+<a href="http://www.cs.washington.edu/homes/taoxie/publications/ase04.pdf">
+http://www.cs.washington.edu/homes/taoxie/publications/ase04.pdf</a>.
+<br><em>Used MuJava in an experimental study</em>.
+
+</li><li><em>A Passive Test Oracle Using a Component's API</em>,
+Rakesh Shukla, David Carrington and Paul Strooper.
+Proceedings of the 12th Asia-Pacific Software Engineering Conference
+(APSEC'05), Taipei, Taiwan, pp. 561-567, 2005.
+<!-- A Href="http://www">http://www</A -->
+<br><em>Used MuJava to seed faults into classes for an experiment</em>.
+
+</li><li><em>Integrating techniques and tools for testing automation</em>,
+Macario Polo, Sergio Tendero and Mario Piattini.
+<em>Journal of Software Testing, Verification and Reliability</em>,
+2006 (early view posting 11 May, 2006).
+<br><em>Used MuJava to seed faults for experimentation</em>.
+
+</li><li><em>On Random Testing of Image Processing Applications</em>,
+Johannes Mayer, Ralph Guderlei.
+accepted by QSIC 2006
+<br><em>Used MuJava to seed faults into classes for an experiment</em>.
+
+</li><li><em>An Empirical Study on the Selection of Good Metamorphic Relations</em>,
+Johannes Mayer, Ralph Guderlei.
+accepted by COMPSAC 2006
+<br><em>Used MuJava to seed faults into classes for an experiment</em>.
+
+</li><li><em>Efficient and Effective Random Testing based on Partitioning and Neighborhood</em>,
+Johannes Mayer.
+Proceedings of the 18th International Conference on Software
+Engineering and Knowledge Engineering (SEKE 2006), Knowledge Systems
+Institute Graduate School, Skokie, USA, 2006, pp. 479-484.
+<br><em>Used MuJava to seed faults into classes for an experiment</em>.
+
+</li><li><em>An Empirical Analysis and Comparison of Random Testing Techniques</em>,
+Johannes Mayer and Christoph Schneckenburger.
+Proceedings of the 2006
+International Symposium on Empirical Software Engineering (ISESE).
+<br><em>Used MuJava to seed faults into classes for an experiment</em>.
+
+</li><li><em>Simulation-Based Testing of Distributed Systems</em>,
+Matthew J. Rutherford, Antonio Carzaniga, and Alexander L. Wolf.
+Proceedings of 14th ACM SIGSOFT Symposium on Foundations of Software Engineering,
+Portland, OR, November, 2006.
+<br>
+<br><em>Used MuJava to seed faults into classes for an experiment</em>.
+
+</li><li><em>Integrating techniques and tools for testing automation</em>,
+Macario Polo, Sergio Tendero and Mario Piattini.
+<em>Journal of Software Testing, Verification and Reliability</em>,
+17(1):3-39, January 2007.
+
+</li><li><em>A Framework for Statistical Testing of Software Components</em>,
+Rakesh Shukla, Paul Strooper, and David Carrington.
+<em>International Journal of Software Engineering and Knowledge Engineering</em>,
+17(3):379-405, June 2007.
+<br><em>Used MuJava to seed faults into classes for an experiment</em>.
+
+</li><li><em><a href="https://cs.gmu.edu/~offutt/mujava/maryamUmarMSThesis.pdf">An Evaluation of Mutation Operators for Equivalent Mutants</a></em>,
+Maryam Umar.
+MS Project, Kings College, London,
+Supervisor: Mark Harman.
+<br><em>Investigated the frequency of equivalent mutants created by MuJava</em>.
+
+</li><li><em><a href="http://doi.ieeecomputersociety.org/10.1109/TAIC.PART.2007.26">State-based Testing is Functional Testing</a></em>,
+F. Ipate and R. Lefticaru.
+Proceedings of the IEEE Testing: Academic and industrial Conference Practice and Research Techniques - MUTATION, pp. 55-66, September 2007.
+
+</li><li><em><a href="http://doi.ieeecomputersociety.org/10.1109/SYNASC.2007.47">Automatic State-Based Test Generation Using Genetic Algorithms</a></em>,
+R. Lefticaru and F. Ipate.
+Proceedings of the Ninth IEEE international Symposium on Symbolic and Numeric Algorithms For Scientific Computing (SYNASC), September, 2007, pp. 188-195.
+
+</li></ol>
+
+
+<!-- Small orange Stripe -->
+<table border="1" cellpadding="0" width="100%" height="10">
+<tbody><tr><td align="left" bgcolor="#ffaa77">
+</td></tr></tbody></table>
+<!-- End Small orange Stripe -->
+
+<p style="font-size:80%;font-style:italic">
+Last update: June 2013, Jeff Offutt and Nan Li
+</p>
+<p style="font-size:70%;font-style:italic">
+Assistance from the U.S. National Science Foundation<br>
+under grant CCR-98-04111 to George Mason University<br>
+was greatly appreciated.
+</p>
+
+
+
+</body></html>

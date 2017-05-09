@@ -1,0 +1,3 @@
+Position(int,int)
+int_getLine()
+int_getColumn()

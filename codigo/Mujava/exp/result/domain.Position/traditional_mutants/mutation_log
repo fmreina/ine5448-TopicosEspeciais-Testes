@@ -1,0 +1,24 @@
+AOIU_1:16:Position(int,int):line => -line
+AOIU_2:17:Position(int,int):column => -column
+AOIU_3:22:int_getLine():this.line => -this.line
+AOIU_4:27:int_getColumn():this.column => -this.column
+AOIS_1:16:Position(int,int):line => ++line
+AOIS_2:16:Position(int,int):line => --line
+AOIS_3:16:Position(int,int):line => line++
+AOIS_4:16:Position(int,int):line => line--
+AOIS_5:17:Position(int,int):column => ++column
+AOIS_6:17:Position(int,int):column => --column
+AOIS_7:17:Position(int,int):column => column++
+AOIS_8:17:Position(int,int):column => column--
+AOIS_9:22:int_getLine():this.line => this.line++
+AOIS_10:22:int_getLine():this.line => this.line--
+AOIS_11:27:int_getColumn():this.column => this.column++
+AOIS_12:27:int_getColumn():this.column => this.column--
+LOI_1:16:Position(int,int):line => ~line
+LOI_2:17:Position(int,int):column => ~column
+LOI_3:22:int_getLine():this.line => ~this.line
+LOI_4:27:int_getColumn():this.column => ~this.column
+SDL_1:17:Position(int,int): this.line = line; this.column = column;  =>   this.column = column;
+SDL_2:17:Position(int,int): this.line = line; this.column = column;  =>   this.line = line;
+SDL_3:23:int_getLine(): return this.line;  =>   return 0;
+SDL_4:28:int_getColumn(): return this.column;  =>   return 0;

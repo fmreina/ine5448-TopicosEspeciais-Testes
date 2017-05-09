@@ -1,0 +1,8 @@
+EAM_1:40:endPosition.getLine() => endPosition.getColumn()
+EAM_2:40:startPosition.getLine() => startPosition.getColumn()
+EAM_3:49:endPosition.getLine() => endPosition.getColumn()
+EAM_4:49:startPosition.getLine() => startPosition.getColumn()
+EAM_5:58:endPosition.getColumn() => endPosition.getLine()
+EAM_6:58:startPosition.getColumn() => startPosition.getLine()
+EAM_7:67:endPosition.getColumn() => endPosition.getLine()
+EAM_8:67:startPosition.getColumn() => startPosition.getLine()

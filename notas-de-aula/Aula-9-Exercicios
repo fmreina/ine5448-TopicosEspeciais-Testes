@@ -2,5 +2,8 @@ Aula 9 - Exercícios práticos - 02/04/2017
 
 - Scova
 - Testes de mutação
-  - PIT
-  - MuJava
+  - PIT (http://pitest.org/  |  http://pitest.org/quickstart/ant/   |   https://github.com/hcoles/pitest-ant-example/tree/master/lib. )
+  - MuJava (https://cs.gmu.edu/~offutt/mujava/)
+
+
+CLASSPATH=$CLASSPATH:/home/100000000355277/ine5448-TopicosEspeciais-Testes/codigo/Mujava/mujava.jar:/home/100000000355277/ine5448-TopicosEspeciais-Testes/codigo/Mujava/openjava.jar:/home/100000000355277/ine5448-TopicosEspeciais-Testes/codigo/Mujava/tools.jar; export CLASSPATH

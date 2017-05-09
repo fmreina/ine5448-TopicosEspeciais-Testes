@@ -1,0 +1,6 @@
+JSI_1:10:static is inserted
+JSI_2:12:static is inserted
+JTD_1:16:this.line => line
+JTD_2:17:this.column => column
+JTI_1:16:line  -->  this.line
+JTI_2:17:column  -->  this.column
