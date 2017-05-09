@@ -9,7 +9,7 @@ import org.junit.Test;
 
 import domain.Puzzle.Direction;
 
-public class tests1 {
+public class Testpit {
 
 	@Test
 	public void putTilesInTheBoardTest(){

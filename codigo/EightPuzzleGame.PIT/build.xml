@@ -55,7 +55,7 @@
 
 
 
-		<javac includeantruntime="false" srcdir="test" destdir="${classOutputDir}/test-classes">
+		<javac includeantruntime="false" srcdir="tests" destdir="${classOutputDir}/test-classes">
 
 			<classpath refid="test.path" />
 
@@ -71,9 +71,9 @@
 
 				<!-- set test classes -->
 
-				<fileset dir="test">
+				<fileset dir="tests">
 
-					<include name="**/*Test.java" />
+					<include name="**/*Test*.java" />
 
 				</fileset>
 
@@ -105,7 +105,7 @@
 			<path refid="pitest.path"/>
 			<path refid="test.path"/>
 		</path>
-		<pitest pitClasspath="pitest.path" threads="2" classPath="mutation.path" targetTests="com.example.*" targetClasses="com.example.*" reportDir="pitReports" sourceDir="src" />
+		<pitest pitClasspath="pitest.path" threads="2" classPath="mutation.path" targetTests="domain.*" targetClasses="domain.*" reportDir="pitReports" sourceDir="src" />
 	</target>
 
 </project>
