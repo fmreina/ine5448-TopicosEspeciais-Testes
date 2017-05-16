@@ -1,0 +1,2 @@
+SDL_1:23:void_shuffle(domain.Puzzle): game.moveEmptyCell( Direction.UP ); game.moveEmptyCell( Direction.LEFT );  =>   game.moveEmptyCell( Direction.LEFT );
+SDL_2:23:void_shuffle(domain.Puzzle): game.moveEmptyCell( Direction.UP ); game.moveEmptyCell( Direction.LEFT );  =>   game.moveEmptyCell( Direction.UP );

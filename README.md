@@ -33,3 +33,5 @@ Professora: Patrícia Vilain
 * [Aula 9](https://github.com/fmreina/ine5448-TopicosEspeciais-Testes/blob/master/notas-de-aula/Aula-9-Exercicios): Exercicios (Scova, PIT, MuJava)
 
 * [Aula 10](https://github.com/fmreina/ine5448-TopicosEspeciais-Testes/blob/master/notas-de-aula/Aula-10-Exercicios): Exercicios (Poker, Leilão)
+
+* [Aula 11](https://github.com/fmreina/ine5448-TopicosEspeciais-Testes/blob/master/notas-de-aula/Aula-11-TDD): Test Driven Development (TDD)

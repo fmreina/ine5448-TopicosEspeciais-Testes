@@ -1,0 +1,50 @@
+Aula 11 - Test Driven Development (TDD) - 16/05/2017
+
+Alguns testes são implementados antes do código
+
+Garante que todo o código tenha um conjunto relevante de testes de unidade disponível
+
+Testes devem ser isolados
+
+Processo:
+  Adcione um teste rapidamente
+  Execute os testes s veja que o novo teste falhou
+  Faça mudans suficientes para o teste passar
+  Rode todos os testes e veja se eles passam
+  Refatore para remover duplicações
+
+
+Lista de testes:
+  Antes de começar escreva uma lista de testes que devem ser escritos para ajudar a guiar
+  A medida que surgir a necessidade de novos testes estes serão adicionados nas lista de testes para que não seja esquecidos
+  Refatoraçòes também serão adicionadas nesta lista
+
+
+Padrões:
+  Fake it -> retorne uma constante e depois de o teset funcionar transforme em uma expressão com variáveis
+  Triangular
+  Óbvia
+  Um para Muitos
+
+
+eXtreme Programming (XP)
+  Praticas:
+    TDD
+    Refatoração
+    Testes de aceitação
+    Programação em par
+    Jogo de planejamento
+    Metaforas
+    Equipe coesa
+    Reuniões em pé
+    Design simples
+    versões pequenas
+    Rítmo sustentável
+    Posse coletiva
+    Padrões de codifição
+    Revisão de código
+    integração contínua
+
+TDD
+  ciclo red, green, refactor
+  
