@@ -1,5 +1,8 @@
 package entity;
 
+import java.util.LinkedList;
+import java.util.List;
+
 public class Funcionario {
 
 	private Long id;
@@ -21,5 +24,9 @@ public class Funcionario {
 			return this.id.equals(((Funcionario) obj).id);
 		}
 		return false;
+	}
+
+	public List<Ocorrencia> obterOcorrenciasEmExecucao() {
+		return new LinkedList<>();
 	}
 }

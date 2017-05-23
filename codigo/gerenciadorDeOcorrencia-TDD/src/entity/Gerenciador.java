@@ -1,9 +1,9 @@
 package entity;
 
-import java.util.ArrayList;
+import java.util.LinkedList;
 import java.util.List;
 
-import exception.funcionarioComMesmoIdException;
+import exception.EntidadeoComMesmoIdException;
 
 public class Gerenciador {
 
@@ -11,8 +11,8 @@ public class Gerenciador {
 	private List<Projeto> listaProjetos;
 
 	public Gerenciador() {
-		this.listaFuncionarios = new ArrayList<>();
-		this.listaProjetos = new ArrayList<>();
+		this.listaFuncionarios = new LinkedList<>();
+		this.listaProjetos = new LinkedList<>();
 
 	}
 
@@ -22,7 +22,7 @@ public class Gerenciador {
 
 	public void cadastrarFuncionario(Funcionario funcionario) {
 		if (this.listaFuncionarios.contains(funcionario)) {
-			throw new funcionarioComMesmoIdException();
+			throw new EntidadeoComMesmoIdException();
 		}
 		this.listaFuncionarios.add(funcionario);
 	}
@@ -31,7 +31,10 @@ public class Gerenciador {
 		return this.listaProjetos;
 	}
 
-	public void addProject(Projeto projeto) {
+	public void cadastrarProject(Projeto projeto) {
+		if (this.listaProjetos.contains(projeto)) {
+			throw new EntidadeoComMesmoIdException();
+		}
 		this.listaProjetos.add(projeto);
 	}
 }

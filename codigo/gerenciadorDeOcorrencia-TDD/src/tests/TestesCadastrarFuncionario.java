@@ -8,7 +8,7 @@ import org.junit.Test;
 
 import entity.Funcionario;
 import entity.Gerenciador;
-import exception.funcionarioComMesmoIdException;
+import exception.EntidadeoComMesmoIdException;
 
 public class TestesCadastrarFuncionario {
 
@@ -62,7 +62,7 @@ public class TestesCadastrarFuncionario {
 		assertEquals(1, this.gerenciador.getListaFuncionarios().size());
 	}
 
-	@Test(expected = funcionarioComMesmoIdException.class)
+	@Test(expected = EntidadeoComMesmoIdException.class)
 	public void cadastrarFuncionarioComMesmoId() throws Exception {
 		this.gerenciador.cadastrarFuncionario(this.fabio);
 		this.gerenciador.cadastrarFuncionario(this.fabio2);
