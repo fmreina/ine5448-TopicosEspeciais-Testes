@@ -3,6 +3,8 @@ package entity;
 import java.util.ArrayList;
 import java.util.List;
 
+import exception.funcionarioComMesmoIdException;
+
 public class Gerenciador {
 
 	private List<Funcionario> listaFuncionarios;
@@ -18,7 +20,10 @@ public class Gerenciador {
 		return this.listaFuncionarios;
 	}
 
-	public void addFuncionario(Funcionario funcionario) {
+	public void cadastrarFuncionario(Funcionario funcionario) {
+		if (this.listaFuncionarios.contains(funcionario)) {
+			throw new funcionarioComMesmoIdException();
+		}
 		this.listaFuncionarios.add(funcionario);
 	}
 

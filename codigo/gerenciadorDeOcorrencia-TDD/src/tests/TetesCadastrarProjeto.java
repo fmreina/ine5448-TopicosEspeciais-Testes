@@ -28,4 +28,9 @@ public class TetesCadastrarProjeto {
 		gerenciador.addProject(new Projeto("Teste"));
 		assertEquals(1, gerenciador.getListaProjetos().size());
 	}
+
+	@Test
+	public void hasListFuncionario() throws Exception {
+
+	}
 }
