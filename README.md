@@ -35,3 +35,4 @@ Professora: Patrícia Vilain
 * [Aula 10](https://github.com/fmreina/ine5448-TopicosEspeciais-Testes/blob/master/notas-de-aula/Aula-10-Exercicios): Exercicios (Poker, Leilão)
 
 * [Aula 11](https://github.com/fmreina/ine5448-TopicosEspeciais-Testes/blob/master/notas-de-aula/Aula-11-TDD): Test Driven Development (TDD)
+	- Exercícios de sala em [codigo/gerenciadorDeOcorrencia-TDD](https://github.com/fmreina/ine5448-TopicosEspeciais-Testes/tree/master/codigo/gerenciadorDeOcorrencia-TDD/src/tests/)

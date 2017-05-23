@@ -1,0 +1,8 @@
+Lista de testes:
+  entidade funcionario
+  funcionario tem nome
+  gerenciador
+    tem lista de funcionarios
+    adicionar funcionario ao gerenciador (cadastrar funcionario)
+
+projeto has ocorrencias?
