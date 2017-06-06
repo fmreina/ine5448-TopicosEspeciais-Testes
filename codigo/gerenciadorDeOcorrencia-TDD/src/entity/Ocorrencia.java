@@ -53,4 +53,8 @@ public class Ocorrencia {
 	public void setResponsavel(Funcionario fabio) {
 		this.responsavel = fabio;
 	}
+
+	public void concluir() {
+		this.tipoStatus = TipoStatus.FECHADA;
+	}
 }

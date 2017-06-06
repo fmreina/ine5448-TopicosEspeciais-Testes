@@ -3,6 +3,8 @@ package entity;
 import java.util.LinkedList;
 import java.util.List;
 
+import exception.OcorrenciaNaoEncontrada;
+
 public class Funcionario {
 
 	private Long id;
@@ -38,5 +40,12 @@ public class Funcionario {
 
 	public void addOcorencia(Ocorrencia ocorrencia) {
 		this.listaOcorrencias.add(ocorrencia);
+	}
+
+	public void removeOcorrencia(Ocorrencia ocorrencia) {
+		if (!this.listaOcorrencias.contains(ocorrencia)) {
+			throw new OcorrenciaNaoEncontrada();
+		}
+		this.listaOcorrencias.remove(ocorrencia);
 	}
 }

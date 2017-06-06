@@ -61,4 +61,14 @@ public class Gerenciador {
 		ocorrencia.setResponsavel(funcionario);
 		funcionario.addOcorencia(ocorrencia);
 	}
+
+	public void concluirOcorrencia(Ocorrencia ocorrencia) {
+		ocorrencia.concluir();
+	}
+
+	public void alteraResponsavelOcorrencia(Funcionario antigo, Funcionario novo, Ocorrencia ocorrencia) {
+		antigo.removeOcorrencia(ocorrencia);
+		cadastrarResponsavelPorOcorrencia(novo, ocorrencia);
+	}
+
 }
