@@ -50,4 +50,21 @@ Tipos de testes
  - ...
 
 
-Sellenium
+Selenium - Selenium.org - Lucas
+
+          +-------------------+
+          | Cliente Web       |
+          +-------------------+
+          | Web Service       |
+          +-------------------+
+          | Regras de Negócio |
+          +-------------------+
+          | Banco de Dados    |
+          +-------------------+
+
+
+ - Framework para automação de navegadores
+ - Não é um framework de teste
+ - Utiizado para a realização de testes de aceitação para aplicações web
+ - Selenium WebDriver e Selenium IDE
+ - Por ser utilizado em conjunto com Fit

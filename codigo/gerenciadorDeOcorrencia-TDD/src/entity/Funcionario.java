@@ -3,8 +3,6 @@ package entity;
 import java.util.LinkedList;
 import java.util.List;
 
-import exception.TamanhoMaximoExcedidoException;
-
 public class Funcionario {
 
 	private Long id;
@@ -39,9 +37,6 @@ public class Funcionario {
 	}
 
 	public void addOcorencia(Ocorrencia ocorrencia) {
-		if (this.listaOcorrencias.size() > 10) {
-			throw new TamanhoMaximoExcedidoException();
-		}
 		this.listaOcorrencias.add(ocorrencia);
 	}
 }

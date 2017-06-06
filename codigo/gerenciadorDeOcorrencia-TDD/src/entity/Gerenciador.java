@@ -4,6 +4,7 @@ import java.util.LinkedList;
 import java.util.List;
 
 import exception.EntidadeoComMesmoIdException;
+import exception.TamanhoMaximoExcedidoException;
 
 public class Gerenciador {
 
@@ -51,6 +52,12 @@ public class Gerenciador {
 	}
 
 	public void cadastrarResponsavelPorOcorrencia(Funcionario funcionario, Ocorrencia ocorrencia) {
+		if (funcionario.getListaOcorrencias().size() == 10) {
+			throw new TamanhoMaximoExcedidoException();
+		}
+		if (funcionario.getListaOcorrencias().contains(ocorrencia)) {
+			throw new EntidadeoComMesmoIdException();
+		}
 		ocorrencia.setResponsavel(funcionario);
 		funcionario.addOcorencia(ocorrencia);
 	}

@@ -9,6 +9,8 @@ import org.junit.Test;
 import entity.Funcionario;
 import entity.Gerenciador;
 import entity.Ocorrencia;
+import exception.EntidadeoComMesmoIdException;
+import exception.TamanhoMaximoExcedidoException;
 import tipos.TipoOcorrencia;
 import tipos.TipoPrioridade;
 import tipos.TipoStatus;
@@ -17,14 +19,13 @@ public class TestesCadastrarResponsavelPorOcorrencia {
 
 	private Gerenciador gerenciador;
 	private Funcionario fabio;
-	private Ocorrencia ocorrencia1, ocorrencia2;
+	private Ocorrencia ocorrencia1;
 
 	@Before
 	public void before() {
 		this.fabio = new Funcionario(1L, "Fabio");
 		this.gerenciador = new Gerenciador();
 		this.ocorrencia1 = new Ocorrencia(1L, "Resumo 1", TipoPrioridade.ALTA, TipoOcorrencia.TAREFA, TipoStatus.ABERTA);
-		this.ocorrencia2 = new Ocorrencia(1L, "Resumo 2", TipoPrioridade.MEDIA, TipoOcorrencia.BUG, TipoStatus.ABERTA);
 	}
 
 	@Test
@@ -32,20 +33,42 @@ public class TestesCadastrarResponsavelPorOcorrencia {
 		this.gerenciador.cadastrarResponsavelPorOcorrencia(this.fabio, this.ocorrencia1);
 		assertEquals(this.fabio, this.ocorrencia1.obterResponsavel());
 		assertTrue(this.fabio.getListaOcorrencias().contains(this.ocorrencia1));
+		assertEquals(1, this.fabio.getListaOcorrencias().size());
 	}
 
-	// @Test
-	// public void trabalheEmUmaOcorrencias() throws Exception {
-	// assertEquals(1, this.fabio.getListaOcorrencias().size());
-	// }
-	//
-	// @Test
-	// public void trabalheEmDezOcorrencias() throws Exception {
-	// assertEquals(10, this.fabio.getListaOcorrencias().size());
-	// }
-	//
-	// @Test
-	// public void trabalheEmNoMaximoDezOcorrencias() throws Exception {
-	// assertTrue(this.fabio.getListaOcorrencias().size() <= 10);
-	// }
+	@Test(expected = EntidadeoComMesmoIdException.class)
+	public void atribuirMesmaOcorrenciaAoFuncionario() throws Exception {
+		this.gerenciador.cadastrarResponsavelPorOcorrencia(this.fabio, this.ocorrencia1);
+		this.gerenciador.cadastrarResponsavelPorOcorrencia(this.fabio, this.ocorrencia1);
+	}
+
+	@Test
+	public void trabalheEmDezOcorrencias() throws Exception {
+		this.gerenciador.cadastrarResponsavelPorOcorrencia(this.fabio, new Ocorrencia(1L, "Resumo 1", TipoPrioridade.ALTA, TipoOcorrencia.TAREFA, TipoStatus.ABERTA));
+		this.gerenciador.cadastrarResponsavelPorOcorrencia(this.fabio, new Ocorrencia(2L, "Resumo 2", TipoPrioridade.ALTA, TipoOcorrencia.TAREFA, TipoStatus.ABERTA));
+		this.gerenciador.cadastrarResponsavelPorOcorrencia(this.fabio, new Ocorrencia(3L, "Resumo 3", TipoPrioridade.ALTA, TipoOcorrencia.TAREFA, TipoStatus.ABERTA));
+		this.gerenciador.cadastrarResponsavelPorOcorrencia(this.fabio, new Ocorrencia(4L, "Resumo 4", TipoPrioridade.ALTA, TipoOcorrencia.TAREFA, TipoStatus.ABERTA));
+		this.gerenciador.cadastrarResponsavelPorOcorrencia(this.fabio, new Ocorrencia(5L, "Resumo 5", TipoPrioridade.ALTA, TipoOcorrencia.TAREFA, TipoStatus.ABERTA));
+		this.gerenciador.cadastrarResponsavelPorOcorrencia(this.fabio, new Ocorrencia(6L, "Resumo 6", TipoPrioridade.ALTA, TipoOcorrencia.TAREFA, TipoStatus.ABERTA));
+		this.gerenciador.cadastrarResponsavelPorOcorrencia(this.fabio, new Ocorrencia(7L, "Resumo 7", TipoPrioridade.ALTA, TipoOcorrencia.TAREFA, TipoStatus.ABERTA));
+		this.gerenciador.cadastrarResponsavelPorOcorrencia(this.fabio, new Ocorrencia(8L, "Resumo 8", TipoPrioridade.ALTA, TipoOcorrencia.TAREFA, TipoStatus.ABERTA));
+		this.gerenciador.cadastrarResponsavelPorOcorrencia(this.fabio, new Ocorrencia(9L, "Resumo 9", TipoPrioridade.ALTA, TipoOcorrencia.TAREFA, TipoStatus.ABERTA));
+		this.gerenciador.cadastrarResponsavelPorOcorrencia(this.fabio, new Ocorrencia(10L, "Resumo 10", TipoPrioridade.ALTA, TipoOcorrencia.TAREFA, TipoStatus.ABERTA));
+		assertEquals(10, this.fabio.getListaOcorrencias().size());
+	}
+
+	@Test(expected = TamanhoMaximoExcedidoException.class)
+	public void trabalheEmNoMaximoDezOcorrencias() throws Exception {
+		this.gerenciador.cadastrarResponsavelPorOcorrencia(this.fabio, new Ocorrencia(1L, "Resumo 1", TipoPrioridade.ALTA, TipoOcorrencia.TAREFA, TipoStatus.ABERTA));
+		this.gerenciador.cadastrarResponsavelPorOcorrencia(this.fabio, new Ocorrencia(2L, "Resumo 2", TipoPrioridade.ALTA, TipoOcorrencia.TAREFA, TipoStatus.ABERTA));
+		this.gerenciador.cadastrarResponsavelPorOcorrencia(this.fabio, new Ocorrencia(3L, "Resumo 3", TipoPrioridade.ALTA, TipoOcorrencia.TAREFA, TipoStatus.ABERTA));
+		this.gerenciador.cadastrarResponsavelPorOcorrencia(this.fabio, new Ocorrencia(4L, "Resumo 4", TipoPrioridade.ALTA, TipoOcorrencia.TAREFA, TipoStatus.ABERTA));
+		this.gerenciador.cadastrarResponsavelPorOcorrencia(this.fabio, new Ocorrencia(5L, "Resumo 5", TipoPrioridade.ALTA, TipoOcorrencia.TAREFA, TipoStatus.ABERTA));
+		this.gerenciador.cadastrarResponsavelPorOcorrencia(this.fabio, new Ocorrencia(6L, "Resumo 6", TipoPrioridade.ALTA, TipoOcorrencia.TAREFA, TipoStatus.ABERTA));
+		this.gerenciador.cadastrarResponsavelPorOcorrencia(this.fabio, new Ocorrencia(7L, "Resumo 7", TipoPrioridade.ALTA, TipoOcorrencia.TAREFA, TipoStatus.ABERTA));
+		this.gerenciador.cadastrarResponsavelPorOcorrencia(this.fabio, new Ocorrencia(8L, "Resumo 8", TipoPrioridade.ALTA, TipoOcorrencia.TAREFA, TipoStatus.ABERTA));
+		this.gerenciador.cadastrarResponsavelPorOcorrencia(this.fabio, new Ocorrencia(9L, "Resumo 9", TipoPrioridade.ALTA, TipoOcorrencia.TAREFA, TipoStatus.ABERTA));
+		this.gerenciador.cadastrarResponsavelPorOcorrencia(this.fabio, new Ocorrencia(10L, "Resumo 10", TipoPrioridade.ALTA, TipoOcorrencia.TAREFA, TipoStatus.ABERTA));
+		this.gerenciador.cadastrarResponsavelPorOcorrencia(this.fabio, new Ocorrencia(11L, "Resumo 11", TipoPrioridade.ALTA, TipoOcorrencia.TAREFA, TipoStatus.ABERTA));
+	}
 }
