@@ -5,37 +5,32 @@ import static org.junit.Assert.assertEquals;
 import org.junit.Before;
 import org.junit.Test;
 
-import entity.Funcionario;
 import entity.Ocorrencia;
 import tipos.TipoOcorrencia;
 import tipos.TipoPrioridade;
+import tipos.TipoStatus;
 
 public class TestesOcorrencia {
 
 	private Ocorrencia ocorrencia1, ocorrencia2, ocorrencia3;
-	private Funcionario fabio;
+	// private Funcionario fabio;
 
 	@Before
 	public void before() {
-		this.fabio = new Funcionario(1L, "Fabio");
-		this.ocorrencia1 = new Ocorrencia(1L, "Resumo 1", this.fabio, TipoPrioridade.ALTA, TipoOcorrencia.TAREFA);
-		this.ocorrencia2 = new Ocorrencia(1L, "Resumo 2", this.fabio, TipoPrioridade.MEDIA, TipoOcorrencia.BUG);
-		this.ocorrencia3 = new Ocorrencia(3L, "Resumo 3", this.fabio, TipoPrioridade.BAIXA, TipoOcorrencia.MELHORIA);
+		this.ocorrencia1 = new Ocorrencia(1L, "Resumo 1", TipoPrioridade.ALTA, TipoOcorrencia.TAREFA, TipoStatus.ABERTA);
+		this.ocorrencia2 = new Ocorrencia(1L, "Resumo 2", TipoPrioridade.MEDIA, TipoOcorrencia.BUG, TipoStatus.ABERTA);
+		this.ocorrencia3 = new Ocorrencia(3L, "Resumo 3", TipoPrioridade.BAIXA, TipoOcorrencia.MELHORIA, TipoStatus.ABERTA);
 	}
 
 	@Test
 	public void novaOcorrencia() throws Exception {
 		assertEquals("(1) : Resumo 1", this.ocorrencia1.toString());
+		assertEquals(TipoStatus.ABERTA, this.ocorrencia1.getStatus());
 	}
 
 	@Test
 	public void igualdadeEntreOcorrencias() throws Exception {
 		assertEquals(this.ocorrencia1, this.ocorrencia2);
-	}
-
-	@Test
-	public void temResponsavel() throws Exception {
-		assertEquals(this.fabio, this.ocorrencia1.obterResponsavel());
 	}
 
 	@Test

@@ -9,11 +9,12 @@ public class Gerenciador {
 
 	private List<Funcionario> listaFuncionarios;
 	private List<Projeto> listaProjetos;
+	private List<Ocorrencia> listaOcorrencias;
 
 	public Gerenciador() {
 		this.listaFuncionarios = new LinkedList<>();
 		this.listaProjetos = new LinkedList<>();
-
+		this.listaOcorrencias = new LinkedList<>();
 	}
 
 	public List<Funcionario> getListaFuncionarios() {
@@ -36,5 +37,21 @@ public class Gerenciador {
 			throw new EntidadeoComMesmoIdException();
 		}
 		this.listaProjetos.add(projeto);
+	}
+
+	public List<Ocorrencia> getListaOcorrencias() {
+		return this.listaOcorrencias;
+	}
+
+	public void cadastrarOcorrencia(Ocorrencia ocorrencia) {
+		if (this.listaOcorrencias.contains(ocorrencia)) {
+			throw new EntidadeoComMesmoIdException();
+		}
+		this.listaOcorrencias.add(ocorrencia);
+	}
+
+	public void cadastrarResponsavelPorOcorrencia(Funcionario funcionario, Ocorrencia ocorrencia) {
+		ocorrencia.setResponsavel(funcionario);
+		funcionario.addOcorencia(ocorrencia);
 	}
 }

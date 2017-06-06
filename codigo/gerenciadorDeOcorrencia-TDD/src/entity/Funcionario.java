@@ -3,14 +3,18 @@ package entity;
 import java.util.LinkedList;
 import java.util.List;
 
+import exception.TamanhoMaximoExcedidoException;
+
 public class Funcionario {
 
 	private Long id;
 	private String nome;
+	private List<Ocorrencia> listaOcorrencias;
 
 	public Funcionario(Long id, String nome) {
 		this.id = id;
 		this.nome = nome;
+		this.listaOcorrencias = new LinkedList<>();
 	}
 
 	@Override
@@ -28,5 +32,16 @@ public class Funcionario {
 
 	public List<Ocorrencia> obterOcorrenciasEmExecucao() {
 		return new LinkedList<>();
+	}
+
+	public List<Ocorrencia> getListaOcorrencias() {
+		return this.listaOcorrencias;
+	}
+
+	public void addOcorencia(Ocorrencia ocorrencia) {
+		if (this.listaOcorrencias.size() > 10) {
+			throw new TamanhoMaximoExcedidoException();
+		}
+		this.listaOcorrencias.add(ocorrencia);
 	}
 }

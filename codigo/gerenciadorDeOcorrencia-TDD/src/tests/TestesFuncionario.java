@@ -1,6 +1,7 @@
 package tests;
 
 import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertNotNull;
 
 import org.junit.Before;
 import org.junit.Test;
@@ -21,7 +22,14 @@ public class TestesFuncionario {
 		assertEquals(0, this.fabio.obterOcorrenciasEmExecucao().size());
 	}
 
-	// TODO:
-	// trabalha em uma occorencia
-	// trabalha em 10 ou menos ocorrencias
+	@Test
+	public void funcionarioTemListaDeOcorrencias() throws Exception {
+		assertNotNull(this.fabio.getListaOcorrencias());
+	}
+
+	@Test
+	public void trabalheEmZeroOcorrencias() throws Exception {
+		assertEquals(0, this.fabio.getListaOcorrencias().size());
+	}
+
 }

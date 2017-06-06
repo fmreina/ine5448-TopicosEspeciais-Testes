@@ -3,13 +3,20 @@ Lista de testes:
   funcionario tem nome
   gerenciador
     tem lista de funcionarios
-    adicionar funcionario ao gerenciador (cadastrar funcionario)
-
-
+    adicionar funcionario ao gerenciador (cadastrar funcionario
 
 projeto has ocorrencias?
 
   igualdade funcionarios/projetos
+
+
+gerenciador verifica numero maximo de ocorrencias de um funcionário
+gerenciador atribui ocorrencia para funcionario
+
+mudar funcionario responsavel pela ocorrencia
+trocar status da ocorrencia
+
+
 
 
 
