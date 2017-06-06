@@ -40,4 +40,4 @@ Professora: Patrícia Vilain
 * [Aula 12](https://github.com/fmreina/ine5448-TopicosEspeciais-Testes/blob/master/notas-de-aula/Aula-12-Falta): Falta - Estudar slides
 
 * [Aula 13](https://github.com/fmreina/ine5448-TopicosEspeciais-Testes/blob/master/notas-de-aula/Aula-13-Testes-De-Integracao): Testes de Integração e Sellenium
-	- Exercícios de sala em - Selenium [codigo/gerenciadorDeOcorrencia-TDD](https://github.com/fmreina/ine5448-TopicosEspeciais-Testes/tree/master/codigo/Selenium/src/br/ufsc/selenium/)
+	- Exercícios de sala em - Selenium [codigo/selenium](https://github.com/fmreina/ine5448-TopicosEspeciais-Testes/tree/master/codigo/Selenium/src/br/ufsc/selenium/)
