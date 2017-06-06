@@ -1,0 +1,16 @@
+Testes de Integração - 06/06/2017
+
+testes para verificar a integração de diferentes módulos
+
+se todos os módulos funcionam separadamente mas podem não funcionar depois da integração devido à diferença de inteface e erros gerados no momento da integração
+
+Tecnica incremental
+- a cada siclo é integrado um novo módulo e testado
+- depois de todos estiverem integrados será feito um teste de sistema
+- costuma-se gerar uma build diária juntamente com os testes de regração
+
+Top-Down / Bottom Up
+ - para sistema com estruturas hierárquicas
+ - integrasse módulos de forma hierárquica preocupando-se apenas com o novo módulo integrado já que os anteriores já estariam estáveis.
+
+ 
