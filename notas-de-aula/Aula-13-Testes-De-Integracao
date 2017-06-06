@@ -1,4 +1,4 @@
-Testes de Integração - 06/06/2017
+Aula 13 - Testes de Integração e Sellenium - 06/06/2017
 
 testes para verificar a integração de diferentes módulos
 
@@ -9,8 +9,45 @@ Tecnica incremental
 - depois de todos estiverem integrados será feito um teste de sistema
 - costuma-se gerar uma build diária juntamente com os testes de regração
 
-Top-Down / Bottom Up
+Tecnica Top-Down / Bottom Up
  - para sistema com estruturas hierárquicas
  - integrasse módulos de forma hierárquica preocupando-se apenas com o novo módulo integrado já que os anteriores já estariam estáveis.
 
- 
+ Tecnica Sanduiche
+  - Usa-se as duas tecnicas Bottm-up e Top-Down conforme necessário
+
+Tecnica BigBang
+  - todos os módulos são integrados e o sistema é testado como um todo
+
+
+Testes de Sistema
+ - Ocorrem depois dos testes de integração e de unidade
+ - deve-se focar em um aspecto do sistema de cada vez
+ - priorizar os testes - testes de stress são feitos após os de funcionalidade
+
+Tipos de testes
+ - Funcionalidade
+    - verificam os requisitos do sistema de acordo com a documentação
+    - testes de módulos dentro do sistema completo
+    - interface grafica
+    - segurançã
+    - usabilidade
+    - ...
+ - Robustez
+    - tentar quebrar o sistema com a finalidade de verificar a robustez do sistema
+ - Interoperabilidade
+ - Performance
+    - compara a performance do sistema com a esperada
+ - Escalabilidade
+    - Determina o limite do sistema em relação ao número de usuários
+    - ...
+ - Carga de estabilidade
+    - assegura-se que o sistema permanece estavel depois de grande carga
+ - Stress
+    - coloca-se o sistema sob stress para verificar seu limite.
+ - Regressão
+ - Documentação
+ - ...
+
+
+Sellenium
