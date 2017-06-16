@@ -44,5 +44,5 @@ Professora: Patrícia Vilain
 
 * [Aula 14](https://github.com/fmreina/ine5448-TopicosEspeciais-Testes/blob/master/notas-de-aula/Aula-14-Teste-De-Aceitacao): Testes de Aceitação
 	- Exercícios de sala em - Fitnesse
-	 [Fitnesse](https://github.com/fmreina/ine5448-TopicosEspeciais-Testes/tree/master/bibliotecas/FitNesse/)
-	 [codigo/Leilao-FIT](https://github.com/fmreina/ine5448-TopicosEspeciais-Testes/tree/master/codigo/INE548-Leilao-FIT/)
+	 	- [Fitnesse](https://github.com/fmreina/ine5448-TopicosEspeciais-Testes/tree/master/bibliotecas/FitNesse/)
+	 	- [codigo/Leilao-FIT](https://github.com/fmreina/ine5448-TopicosEspeciais-Testes/tree/master/codigo/INE548-Leilao-FIT/)
