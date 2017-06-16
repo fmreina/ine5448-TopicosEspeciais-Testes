@@ -1,0 +1,152 @@
+<?xml version="1.0"?>
+<testResults>
+  <FitNesseVersion>v20161106</FitNesseVersion>
+  <rootPath>ProjetoLeilao.CadastrosBasicos.CadastrarUsuario</rootPath>
+    <result>
+    <counts>
+      <right>9</right>
+      <wrong>1</wrong>
+      <ignores>0</ignores>
+      <exceptions>0</exceptions>
+    </counts>
+    <date>2017-06-13T10:52:21-03:00</date>
+    <runTimeInMillis>2</runTimeInMillis>
+    <content>&lt;br/&gt;&amp;lt;test page&amp;gt;&lt;br/&gt;&lt;br/&gt;&lt;ul&gt;
+	&lt;li&gt;O sistema de permitir o cadastro de usuários&lt;/li&gt;
+	&lt;li&gt;Não deve permitir cpf's iguais&lt;/li&gt;
+&lt;/ul&gt;
+&lt;br/&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td colspan="7"&gt;fixtures.UsuarioColumnFixtureTest&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;nome&lt;/td&gt;
+		&lt;td&gt;endereco&lt;/td&gt;
+		&lt;td&gt;email&lt;/td&gt;
+		&lt;td&gt;cpf&lt;/td&gt;
+		&lt;td&gt;verificar usuario existe()&lt;/td&gt;
+		&lt;td&gt;cadastrar usuario()&lt;/td&gt;
+		&lt;td&gt;verificar usuario existe?&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;ernani Cesar&lt;/td&gt;
+		&lt;td&gt;ufsc&lt;/td&gt;
+		&lt;td&gt;email@teste.com&lt;/td&gt;
+		&lt;td&gt;327.387.790-18&lt;/td&gt;
+		&lt;td&gt; &lt;span class="fit_grey"&gt;true&lt;/span&gt;&lt;/td&gt;
+		&lt;td class="pass"&gt;true&lt;/td&gt;
+		&lt;td class="pass"&gt;true&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;Douglas Hiura&lt;/td&gt;
+		&lt;td&gt;ufsc&lt;/td&gt;
+		&lt;td&gt;email@teste.com&lt;/td&gt;
+		&lt;td&gt;832.390.518-50&lt;/td&gt;
+		&lt;td&gt; &lt;span class="fit_grey"&gt;true&lt;/span&gt;&lt;/td&gt;
+		&lt;td class="pass"&gt;true&lt;/td&gt;
+		&lt;td class="pass"&gt;true&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;Patricia Vilain&lt;/td&gt;
+		&lt;td&gt;ufsc&lt;/td&gt;
+		&lt;td&gt;email@teste.com&lt;/td&gt;
+		&lt;td&gt;323.667.674-47&lt;/td&gt;
+		&lt;td&gt; &lt;span class="fit_grey"&gt;true&lt;/span&gt;&lt;/td&gt;
+		&lt;td class="pass"&gt;true&lt;/td&gt;
+		&lt;td class="pass"&gt;true&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;Patricia Vilain&lt;/td&gt;
+		&lt;td&gt;ufsc&lt;/td&gt;
+		&lt;td&gt;email@teste.com&lt;/td&gt;
+		&lt;td&gt;323.667.674-00&lt;/td&gt;
+		&lt;td&gt; &lt;span class="fit_grey"&gt;true&lt;/span&gt;&lt;/td&gt;
+		&lt;td class="pass"&gt;false&lt;/td&gt;
+		&lt;td class="fail"&gt;false &lt;span class="fit_label"&gt;expected&lt;/span&gt;&lt;hr&gt;true &lt;span class="fit_label"&gt;actual&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;Patricia Vilain&lt;/td&gt;
+		&lt;td&gt;ufsc&lt;/td&gt;
+		&lt;td&gt;email@teste.com&lt;/td&gt;
+		&lt;td&gt;323.667.674-47&lt;/td&gt;
+		&lt;td&gt; &lt;span class="fit_grey"&gt;true&lt;/span&gt;&lt;/td&gt;
+		&lt;td class="pass"&gt;false&lt;/td&gt;
+		&lt;td class="pass"&gt;true&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+</content>
+    <relativePageName>CadastrarUsuario</relativePageName>
+        <tags>usuario</tags>
+          </result>
+  <executionLog>
+    <testSystem>fit:fit.FitServer</testSystem>
+    <command>java -cp /home/fabio/ufsc/ine5448-TopicosEspeciais-Testes/bibliotecas/FitNesse/fitnesse-standalone.jar:/home/fabio/ufsc/ine5448-TopicosEspeciais-Testes/codigo/INE5448-Leilao-FIT/bin:/home/fabio/ufsc/ine5448-TopicosEspeciais-Testes/bibliotecas/FitNesse/fitnesse-standalone.jar:/home/fabio/ufsc/ine5448-TopicosEspeciais-Testes/bibliotecas/FitNesse/fitlibrary-2.0.jar:/home/fabio/ufsc/ine5448-TopicosEspeciais-Testes/bibliotecas/FitNesse/log4j-1.2.17.jar fit.FitServer groot 38796 3863</command>
+    <exitCode>1</exitCode>
+    <stdOut></stdOut>
+    <stdErr>java.lang.Exception: CPF inválido.
+	at modelo.MercadoLeilao.cadastrarUsuario(MercadoLeilao.java:35)
+	at modelo.FachadaMercadoLeilaoComSerializacao.cadastrarUsuario(FachadaMercadoLeilaoComSerializacao.java:18)
+	at fixtures.UsuarioColumnFixtureTest.cadastrarUsuario(UsuarioColumnFixtureTest.java:21)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at fit.TypeAdapter.invoke(TypeAdapter.java:108)
+	at fit.TypeAdapter.get(TypeAdapter.java:97)
+	at fit.Fixture$CellComparator.compareCellToResult(Fixture.java:374)
+	at fit.Fixture$CellComparator.access$100(Fixture.java:360)
+	at fit.Fixture.compareCellToResult(Fixture.java:302)
+	at fit.Fixture.check(Fixture.java:298)
+	at fit.ColumnFixture.check(ColumnFixture.java:45)
+	at fit.Binding$QueryBinding.doCell(Binding.java:224)
+	at fit.ColumnFixture.doCell(ColumnFixture.java:32)
+	at fit.Fixture.doCells(Fixture.java:174)
+	at fit.Fixture.doRow(Fixture.java:168)
+	at fit.ColumnFixture.doRow(ColumnFixture.java:21)
+	at fit.Fixture.doRows(Fixture.java:162)
+	at fit.ColumnFixture.doRows(ColumnFixture.java:13)
+	at fit.Fixture.doTable(Fixture.java:156)
+	at fit.Fixture.interpretTables(Fixture.java:101)
+	at fit.Fixture.doTables(Fixture.java:81)
+	at fit.FitServer.process(FitServer.java:81)
+	at fit.FitServer.run(FitServer.java:56)
+	at fit.FitServer.main(FitServer.java:41)
+java.lang.Exception: O usuario já existe.
+	at modelo.MercadoLeilao.cadastrarUsuario(MercadoLeilao.java:32)
+	at modelo.FachadaMercadoLeilaoComSerializacao.cadastrarUsuario(FachadaMercadoLeilaoComSerializacao.java:18)
+	at fixtures.UsuarioColumnFixtureTest.cadastrarUsuario(UsuarioColumnFixtureTest.java:21)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at fit.TypeAdapter.invoke(TypeAdapter.java:108)
+	at fit.TypeAdapter.get(TypeAdapter.java:97)
+	at fit.Fixture$CellComparator.compareCellToResult(Fixture.java:374)
+	at fit.Fixture$CellComparator.access$100(Fixture.java:360)
+	at fit.Fixture.compareCellToResult(Fixture.java:302)
+	at fit.Fixture.check(Fixture.java:298)
+	at fit.ColumnFixture.check(ColumnFixture.java:45)
+	at fit.Binding$QueryBinding.doCell(Binding.java:224)
+	at fit.ColumnFixture.doCell(ColumnFixture.java:32)
+	at fit.Fixture.doCells(Fixture.java:174)
+	at fit.Fixture.doRow(Fixture.java:168)
+	at fit.ColumnFixture.doRow(ColumnFixture.java:21)
+	at fit.Fixture.doRows(Fixture.java:162)
+	at fit.ColumnFixture.doRows(ColumnFixture.java:13)
+	at fit.Fixture.doTable(Fixture.java:156)
+	at fit.Fixture.interpretTables(Fixture.java:101)
+	at fit.Fixture.doTables(Fixture.java:81)
+	at fit.FitServer.process(FitServer.java:81)
+	at fit.FitServer.run(FitServer.java:56)
+	at fit.FitServer.main(FitServer.java:41)
+</stdErr>
+  </executionLog>
+  <finalCounts>
+    <right>0</right>
+    <wrong>1</wrong>
+    <ignores>0</ignores>
+    <exceptions>0</exceptions>
+  </finalCounts>
+  <totalRunTimeInMillis>464</totalRunTimeInMillis>
+</testResults>
+

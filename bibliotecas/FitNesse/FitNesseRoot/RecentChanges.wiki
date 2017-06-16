@@ -1,0 +1,9 @@
+|ProjetoLeilao.CadastrosBasicos.CadastrarProduto||12:02:10 Tue, Jun 13, 2017|
+|ProjetoLeilao.CadastrosBasicos.CadastrarUsuarioComSetUpFixture||11:33:57 Tue, Jun 13, 2017|
+|ProjetoLeilao.CadastrosBasicos||11:32:04 Tue, Jun 13, 2017|
+|ProjetoLeilao||11:30:38 Tue, Jun 13, 2017|
+|ProjetoLeilao.Mercado.MontarMercado||11:17:01 Tue, Jun 13, 2017|
+|ProjetoLeilao.CadastrosBasicos.CadastrarUsuario||11:01:14 Tue, Jun 13, 2017|
+|ProjetoLeilao.Mercado||09:49:32 Tue, Jun 13, 2017|
+|FitLibrary||09:45:23 Tue, Jun 13, 2017|
+|FrontPage||09:33:35 Tue, Jun 13, 2017|

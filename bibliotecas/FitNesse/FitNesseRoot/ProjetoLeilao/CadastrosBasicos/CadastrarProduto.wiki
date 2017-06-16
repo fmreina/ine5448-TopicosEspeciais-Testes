@@ -1,0 +1,28 @@
+---
+Suites: produto
+Test
+---
+<test page>
+!| ActionFixture                        |
+|start|fixtures.MercadoActionFixtureTest|
+|press|limpar mercado                   |
+
+#!|fixtures.UsuarioSetUpFixtureTest                                                                                          |
+!|fixtures.UsuarioColumnFixtureTest                                                                                          |
+|nome       |endereco|email          |cpf           |verificar usuario existe()|cadastrar usuario()|verificar usuario existe?|
+|Fabio Reina|ufsc    |email@teste.com|021.993.711-74|                          |true               |true                     |
+
+!|fixtures.ProdutoColumnFixtureTest                                                                                                                  |
+|nome   |descricao     |lance minimo|cpf leiloador |data limite|verificar produto existe?|cadastrar produto()|verificar produto existe?|tem usuario()|
+|mesa   |mesa antiga   |200.00      |021.993.711-74|26/06/2017 |                         |                   |                         |             |
+|mesa   |mesa antiga   |200.00      |021.993.711-74|26/06/2017 |                         |                   |                         |             |
+|cadeira|cadeira antiga|200.00      |021.993.711-74|26/06/2017 |                         |                   |                         |             |
+
+
+
+
+
+
+!| ActionFixture                        |
+|start|fixtures.MercadoActionFixtureTest|
+|press|limpar mercado                   |

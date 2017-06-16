@@ -1,0 +1,16 @@
+---
+Suites: usuario
+Test
+---
+<test page>
+
+ * O sistema de permitir o cadastro de usuários
+ * Não deve permitir cpf's iguais
+
+!|fixtures.UsuarioColumnFixtureTest                                                                                              |
+|nome           |endereco|email          |cpf           |verificar usuario existe()|cadastrar usuario()|verificar usuario existe?|
+|ernani Cesar   |ufsc    |email@teste.com|327.387.790-18|                          |true               |true                     |
+|Douglas Hiura  |ufsc    |email@teste.com|832.390.518-50|                          |true               |true                     |
+|Patricia Vilain|ufsc    |email@teste.com|323.667.674-47|                          |true               |true                     |
+|Patricia Vilain|ufsc    |email@teste.com|323.667.674-00|                          |false              |false                    |
+|Patricia Vilain|ufsc    |email@teste.com|323.667.674-47|                          |false              |true                     |

@@ -1,0 +1,50 @@
+<?xml version="1.0"?>
+<testResults>
+  <FitNesseVersion>v20161106</FitNesseVersion>
+  <rootPath>ProjetoLeilao.Mercado.MontarMercado</rootPath>
+    <result>
+    <counts>
+      <right>0</right>
+      <wrong>1</wrong>
+      <ignores>0</ignores>
+      <exceptions>0</exceptions>
+    </counts>
+    <date>2017-06-13T10:28:42-03:00</date>
+    <runTimeInMillis>2</runTimeInMillis>
+    <content>&lt;br/&gt;&amp;lt;test page&amp;gt;&lt;br/&gt;&lt;br/&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td colspan="3"&gt;ActionFixture&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;start&lt;/td&gt;
+		&lt;td colspan="2"&gt;fixtures.MercadoActionFixtureTest&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;press&lt;/td&gt;
+		&lt;td colspan="2"&gt;montar mercado&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;check&lt;/td&gt;
+		&lt;td&gt;mercado montado&lt;/td&gt;
+		&lt;td class="fail"&gt;false &lt;span class="fit_label"&gt;expected&lt;/span&gt;&lt;hr&gt;true &lt;span class="fit_label"&gt;actual&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+</content>
+    <relativePageName>MontarMercado</relativePageName>
+          </result>
+  <executionLog>
+    <testSystem>fit:fit.FitServer</testSystem>
+    <command>java -cp /home/fabio/ufsc/ine5448-TopicosEspeciais-Testes/bibliotecas/FitNesse/fitnesse-standalone.jar:/home/fabio/ufsc/ine5448-TopicosEspeciais-Testes/codigo/INE5448-Leilao-FIT/bin:/home/fabio/ufsc/ine5448-TopicosEspeciais-Testes/bibliotecas/FitNesse/fitnesse-standalone.jar:/home/fabio/ufsc/ine5448-TopicosEspeciais-Testes/bibliotecas/FitNesse/fitlibrary-2.0.jar:/home/fabio/ufsc/ine5448-TopicosEspeciais-Testes/bibliotecas/FitNesse/log4j-1.2.17.jar fit.FitServer groot 39186 3863</command>
+    <exitCode>1</exitCode>
+    <stdOut></stdOut>
+    <stdErr></stdErr>
+  </executionLog>
+  <finalCounts>
+    <right>0</right>
+    <wrong>1</wrong>
+    <ignores>0</ignores>
+    <exceptions>0</exceptions>
+  </finalCounts>
+  <totalRunTimeInMillis>454</totalRunTimeInMillis>
+</testResults>
+

@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<testResults>
+  <FitNesseVersion>v20161106</FitNesseVersion>
+  <rootPath>ProjetoLeilao.Mercado.MontarMercado</rootPath>
+    <executionLog>
+    <testSystem>fit:fitlibary.suite.FitLibraryServer</testSystem>
+    <command>java -cp /home/fabio/ufsc/ine5448-TopicosEspeciais-Testes/codigo/INE5448-Leilao-FIT/bin:path lib /home/fabio/ufsc/ine5448-TopicosEspeciais-Testes/bibliotecas/FitNesse/fitlibrary-2.0.jar:path lib /home/fabio/ufsc/ine5448-TopicosEspeciais-Testes/bibliotecas/FitNesse/fitnesse-standalone.jar:path lib /home/fabio/ufsc/ine5448-TopicosEspeciais-Testes/bibliotecas/FitNesse/log4j-1.2.17.jar fitlibary.suite.FitLibraryServer groot 46363 3863</command>
+    <exitCode>1</exitCode>
+    <stdOut></stdOut>
+    <stdErr>Error: Could not find or load main class fitlibary.suite.FitLibraryServer
+</stdErr>
+    <exception>FitClient: external process terminated before a connection could be established.</exception>
+    <exception>FitClient: external process terminated before a connection could be established.</exception>
+  </executionLog>
+  <finalCounts>
+    <right>0</right>
+    <wrong>0</wrong>
+    <ignores>0</ignores>
+    <exceptions>1</exceptions>
+  </finalCounts>
+  <totalRunTimeInMillis>1014</totalRunTimeInMillis>
+</testResults>
+

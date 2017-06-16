@@ -1,0 +1,15 @@
+!contents -R2 -g -p -f -h
+!2 '''Projeto Leilão'''
+Testando Projeto leilão com FIT
+
+#Biblioteca da engine para execução dos testes
+#!define TEST_RUNNER {fitlibary.suite.FitLibraryServer}
+#
+#
+Localização das fixtures
+!path /home/fabio/ufsc/ine5448-TopicosEspeciais-Testes/codigo/INE5448-Leilao-FIT/bin
+
+Bibliotecas FitLibrary e dependencias
+!path /home/fabio/ufsc/ine5448-TopicosEspeciais-Testes/bibliotecas/FitNesse/fitnesse-standalone.jar
+!path /home/fabio/ufsc/ine5448-TopicosEspeciais-Testes/codigo/INE5448-Leilao-FIT/fitlibrary-2.0.jar
+!path /home/fabio/ufsc/ine5448-TopicosEspeciais-Testes/bibliotecas/FitNesse/log4j-1.2.17.jar

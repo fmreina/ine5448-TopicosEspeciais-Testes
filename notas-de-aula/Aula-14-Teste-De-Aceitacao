@@ -1,0 +1,56 @@
+Teste de Aceitação 13/06/2017
+
+Testes
+    Verificaçao
+      - testes de unidade
+      - testes de integração
+      - testes de Sistema
+    Validação
+      - testes de aceitação
+
+
+Verificação x Validação
+    Verificação - verifica tudo o que foi especificado
+    Validação - verifica com o cliente se era o que ele queria
+
+Teste d aceitação
+  determina se um sistema satisfaz seus critérios de aceitação, verificando seu comportamento em relação aos requisitos do cliente (SWEBOK)
+
+Critérios
+  São critérios que o sistema deve satisfazer para ser aceito pelo cliente
+  São parte do contrato de terceirização entre o cliente o fornecedor e o comprador
+
+Fases
+  - Planejamento
+  - Execução
+  - Relatório
+
+Teste de aceitação com exemplos
+ - o uso de exemplos é uma boa técnica para especificar os teste de aceitação.
+ - Se o usuário não consegue dar um exemplo é porque ele ainda não sabe o que quer.
+
+ - Formato Tabular (FIT) - descreve o teste em forma de tabela
+ - BDD - Descreve o teste em forma de texto
+ - US-UID (User Scenario - User Interactio Diagram) -
+
+ ATDD - Acceptance TDD
+  - quando os testes de aceitação são desenvolvidos antes do códogp de produção
+  - separa os dados do teste do código da aplicação. A aplicação será iniciada e os dados de teste serão colados na aplicação para executar o código (glue code)
+
+  -\\-
+
+
+
+Exercícios FIT
+  - seguir roteiro
+
+  - path lib /home/fabio/ufsc/ine5448-TopicosEspeciais-Testes/bibliotecas/FitNesse/
+  - start fitness service (parametro -p indica a porta - porta padrao 80)
+        java -jar fitnesse-standalone.jar -p 8080
+  - pasta do projeto
+        /home/fabio/ufsc/ine5448-TopicosEspeciais-Testes/codigo/INE5448-Leilao-FIT
+
+
+revisao
+eclema leilao
+enviar código do Scova

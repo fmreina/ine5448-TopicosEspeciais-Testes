@@ -1,0 +1,193 @@
+<?xml version="1.0"?>
+<testResults>
+  <FitNesseVersion>v20161106</FitNesseVersion>
+  <rootPath>ProjetoLeilao.CadastrosBasicos.CadastrarProduto</rootPath>
+    <result>
+    <counts>
+      <right>2</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>3</exceptions>
+    </counts>
+    <date>2017-06-13T12:01:06-03:00</date>
+    <runTimeInMillis>80</runTimeInMillis>
+    <content>&lt;br/&gt;&amp;lt;test page&amp;gt;&lt;br/&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td colspan="2"&gt;ActionFixture&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;start&lt;/td&gt;
+		&lt;td&gt;fixtures.MercadoActionFixtureTest&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;press&lt;/td&gt;
+		&lt;td&gt;limpar mercado&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td colspan="7"&gt;fixtures.UsuarioColumnFixtureTest&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;nome&lt;/td&gt;
+		&lt;td&gt;endereco&lt;/td&gt;
+		&lt;td&gt;email&lt;/td&gt;
+		&lt;td&gt;cpf&lt;/td&gt;
+		&lt;td&gt;verificar usuario existe()&lt;/td&gt;
+		&lt;td&gt;cadastrar usuario()&lt;/td&gt;
+		&lt;td&gt;verificar usuario existe?&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;Fabio Reina&lt;/td&gt;
+		&lt;td&gt;ufsc&lt;/td&gt;
+		&lt;td&gt;email@teste.com&lt;/td&gt;
+		&lt;td&gt;021.993.711-74&lt;/td&gt;
+		&lt;td&gt; &lt;span class="fit_grey"&gt;true&lt;/span&gt;&lt;/td&gt;
+		&lt;td class="pass"&gt;true&lt;/td&gt;
+		&lt;td class="pass"&gt;true&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;&lt;br/&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td colspan="7"&gt;fixtures.UsuarioColumnFixtureTest&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;nome&lt;/td&gt;
+		&lt;td&gt;endereco&lt;/td&gt;
+		&lt;td&gt;email&lt;/td&gt;
+		&lt;td&gt;cpf&lt;/td&gt;
+		&lt;td&gt;verificar usuario existe()&lt;/td&gt;
+		&lt;td&gt;cadastrar usuario()&lt;/td&gt;
+		&lt;td&gt;verificar usuario existe?&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td colspan="9"&gt;fixtures.ProdutoColumnFixtureTest&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;nome&lt;/td&gt;
+		&lt;td&gt;descricao&lt;/td&gt;
+		&lt;td&gt;lance minimo&lt;/td&gt;
+		&lt;td&gt;cpf leiloador&lt;/td&gt;
+		&lt;td&gt;data limite&lt;/td&gt;
+		&lt;td&gt;verificar produto existe?&lt;/td&gt;
+		&lt;td&gt;cadastrar produto()&lt;/td&gt;
+		&lt;td&gt;verificar produto existe?&lt;/td&gt;
+		&lt;td&gt;tem usuari?o&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;mesa&lt;/td&gt;
+		&lt;td&gt;mesa antiga&lt;/td&gt;
+		&lt;td&gt;200.00&lt;/td&gt;
+		&lt;td&gt;021.993.711-74&lt;/td&gt;
+		&lt;td&gt;26/06/2017&lt;/td&gt;
+		&lt;td&gt; &lt;span class="fit_grey"&gt;false&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt; &lt;span class="fit_grey"&gt;true&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt; &lt;span class="fit_grey"&gt;true&lt;/span&gt;&lt;/td&gt;
+		&lt;td class="error"&gt; &lt;span class="fit_grey"&gt;true&lt;/span&gt;&lt;hr&gt;&lt;pre&gt;&lt;div class="fit_stacktrace"&gt;java.lang.NullPointerException
+	at fit.TypeAdapter.set(TypeAdapter.java:103)
+	at fit.Binding$SetBinding.doCell(Binding.java:217)
+	at fit.ColumnFixture.doCell(ColumnFixture.java:32)
+	at fit.Fixture.doCells(Fixture.java:174)
+	at fit.Fixture.doRow(Fixture.java:168)
+	at fit.ColumnFixture.doRow(ColumnFixture.java:21)
+	at fit.Fixture.doRows(Fixture.java:162)
+	at fit.ColumnFixture.doRows(ColumnFixture.java:13)
+	at fit.Fixture.doTable(Fixture.java:156)
+	at fit.Fixture.interpretFollowingTables(Fixture.java:121)
+	at fit.Fixture.interpretTables(Fixture.java:107)
+	at fit.Fixture.doTables(Fixture.java:81)
+	at fit.FitServer.process(FitServer.java:81)
+	at fit.FitServer.run(FitServer.java:56)
+	at fit.FitServer.main(FitServer.java:41)
+&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;mesa&lt;/td&gt;
+		&lt;td&gt;mesa antiga&lt;/td&gt;
+		&lt;td&gt;200.00&lt;/td&gt;
+		&lt;td&gt;021.993.711-74&lt;/td&gt;
+		&lt;td&gt;26/06/2017&lt;/td&gt;
+		&lt;td&gt; &lt;span class="fit_grey"&gt;true&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt; &lt;span class="fit_grey"&gt;false&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt; &lt;span class="fit_grey"&gt;true&lt;/span&gt;&lt;/td&gt;
+		&lt;td class="error"&gt; &lt;span class="fit_grey"&gt;true&lt;/span&gt;&lt;hr&gt;&lt;pre&gt;&lt;div class="fit_stacktrace"&gt;java.lang.NullPointerException
+	at fit.TypeAdapter.set(TypeAdapter.java:103)
+	at fit.Binding$SetBinding.doCell(Binding.java:217)
+	at fit.ColumnFixture.doCell(ColumnFixture.java:32)
+	at fit.Fixture.doCells(Fixture.java:174)
+	at fit.Fixture.doRow(Fixture.java:168)
+	at fit.ColumnFixture.doRow(ColumnFixture.java:21)
+	at fit.Fixture.doRows(Fixture.java:162)
+	at fit.ColumnFixture.doRows(ColumnFixture.java:13)
+	at fit.Fixture.doTable(Fixture.java:156)
+	at fit.Fixture.interpretFollowingTables(Fixture.java:121)
+	at fit.Fixture.interpretTables(Fixture.java:107)
+	at fit.Fixture.doTables(Fixture.java:81)
+	at fit.FitServer.process(FitServer.java:81)
+	at fit.FitServer.run(FitServer.java:56)
+	at fit.FitServer.main(FitServer.java:41)
+&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;cadeira&lt;/td&gt;
+		&lt;td&gt;cadeira antiga&lt;/td&gt;
+		&lt;td&gt;200.00&lt;/td&gt;
+		&lt;td&gt;021.993.711-74&lt;/td&gt;
+		&lt;td&gt;26/06/2017&lt;/td&gt;
+		&lt;td&gt; &lt;span class="fit_grey"&gt;false&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt; &lt;span class="fit_grey"&gt;true&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt; &lt;span class="fit_grey"&gt;true&lt;/span&gt;&lt;/td&gt;
+		&lt;td class="error"&gt; &lt;span class="fit_grey"&gt;true&lt;/span&gt;&lt;hr&gt;&lt;pre&gt;&lt;div class="fit_stacktrace"&gt;java.lang.NullPointerException
+	at fit.TypeAdapter.set(TypeAdapter.java:103)
+	at fit.Binding$SetBinding.doCell(Binding.java:217)
+	at fit.ColumnFixture.doCell(ColumnFixture.java:32)
+	at fit.Fixture.doCells(Fixture.java:174)
+	at fit.Fixture.doRow(Fixture.java:168)
+	at fit.ColumnFixture.doRow(ColumnFixture.java:21)
+	at fit.Fixture.doRows(Fixture.java:162)
+	at fit.ColumnFixture.doRows(ColumnFixture.java:13)
+	at fit.Fixture.doTable(Fixture.java:156)
+	at fit.Fixture.interpretFollowingTables(Fixture.java:121)
+	at fit.Fixture.interpretTables(Fixture.java:107)
+	at fit.Fixture.doTables(Fixture.java:81)
+	at fit.FitServer.process(FitServer.java:81)
+	at fit.FitServer.run(FitServer.java:56)
+	at fit.FitServer.main(FitServer.java:41)
+&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td colspan="2"&gt;ActionFixture&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;start&lt;/td&gt;
+		&lt;td&gt;fixtures.MercadoActionFixtureTest&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;press&lt;/td&gt;
+		&lt;td&gt;limpar mercado&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+</content>
+    <relativePageName>CadastrarProduto</relativePageName>
+        <tags>produto</tags>
+          </result>
+  <executionLog>
+    <testSystem>fit:fit.FitServer</testSystem>
+    <command>java -cp /home/fabio/ufsc/ine5448-TopicosEspeciais-Testes/bibliotecas/FitNesse/fitnesse-standalone.jar:/home/fabio/ufsc/ine5448-TopicosEspeciais-Testes/codigo/INE5448-Leilao-FIT/bin:/home/fabio/ufsc/ine5448-TopicosEspeciais-Testes/bibliotecas/FitNesse/fitnesse-standalone.jar:/home/fabio/ufsc/ine5448-TopicosEspeciais-Testes/codigo/INE5448-Leilao-FIT/fitlibrary-2.0.jar:/home/fabio/ufsc/ine5448-TopicosEspeciais-Testes/bibliotecas/FitNesse/log4j-1.2.17.jar fit.FitServer groot 43357 3863</command>
+    <exitCode>3</exitCode>
+    <stdOut></stdOut>
+    <stdErr></stdErr>
+  </executionLog>
+  <finalCounts>
+    <right>0</right>
+    <wrong>0</wrong>
+    <ignores>0</ignores>
+    <exceptions>1</exceptions>
+  </finalCounts>
+  <totalRunTimeInMillis>454</totalRunTimeInMillis>
+</testResults>
+

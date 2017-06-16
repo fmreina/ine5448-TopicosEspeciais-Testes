@@ -1,0 +1,13 @@
+---
+Suite
+Suites: montar, mercado
+---
+!1 Test suite Mercado
+!contents -R2 -g -p -f -h
+Conjunto de testes
+
+R1 - 
+
+R2 - 
+
+R3 - 
