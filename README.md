@@ -38,6 +38,7 @@ Professora: Patrícia Vilain
 	- Exercícios de sala em [codigo/gerenciadorDeOcorrencia-TDD](https://github.com/fmreina/ine5448-TopicosEspeciais-Testes/tree/master/codigo/gerenciadorDeOcorrencia-TDD/src/tests/)
 
 * [Aula 12](https://github.com/fmreina/ine5448-TopicosEspeciais-Testes/blob/master/notas-de-aula/Aula-12-Falta): Falta - Estudar slides
+	- Exercícios de Revisão de Código em [dizidoro/GerenciadorDeOcorrencias](https://github.com/dizidoro/GerenciadorDeOcorrencias/pull/1#pullrequestreview-44643486)
 
 * [Aula 13](https://github.com/fmreina/ine5448-TopicosEspeciais-Testes/blob/master/notas-de-aula/Aula-13-Testes-De-Integracao): Testes de Integração e Sellenium
 	- Exercícios de sala em - Selenium [codigo/selenium](https://github.com/fmreina/ine5448-TopicosEspeciais-Testes/tree/master/codigo/Selenium/src/br/ufsc/selenium/)
